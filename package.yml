@@ -1,6 +1,6 @@
 package:
   format-version: "1.0.0"
-  name: "replaceme"
+  name: "csp_apps_pic32cxbz6_wbz6"
   type: "application"
   status: "beta"
   required: false
@@ -9,4 +9,4 @@ package:
   dependencies:
     - name: "csp"
       type: "package"
-      version: "3.14.0"
+      version: "3.19.0"
