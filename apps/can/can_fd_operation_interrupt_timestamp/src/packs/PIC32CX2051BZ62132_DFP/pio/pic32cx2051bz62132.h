@@ -17,13 +17,13 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:16:58Z */
+/*  file generated from device description file (ATDF) version 2024-09-25T20:48:20Z  */
 #ifndef _PIC32CX2051BZ62132_GPIO_H_
 #define _PIC32CX2051BZ62132_GPIO_H_
 
-/* ========== Peripheral I/O pin numbers ========== */
+/* ======================= Peripheral I/O pin numbers ======================= */
 
-/* ========== Peripheral I/O masks ========== */
+/* ========================== Peripheral I/O masks ========================== */
 
 
 #endif /* _PIC32CX2051BZ62132_GPIO_H_ */

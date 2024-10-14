@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,9 +17,9 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_ADCHS_INSTANCE_
-#define _WBZ65_ADCHS_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_ADCHS_INSTANCE_
+#define _PIC32CXBZ62_ADCHS_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for ADCHS peripheral ========== */
@@ -50,4 +50,4 @@
 #define ADCHS_NUM_INTS                           (2)        
 #define ADCHS_SET_CLR_INV_PRESENT                (1)        /* Present */
 
-#endif /* _WBZ65_ADCHS_INSTANCE_ */
+#endif /* _PIC32CXBZ62_ADCHS_INSTANCE_ */

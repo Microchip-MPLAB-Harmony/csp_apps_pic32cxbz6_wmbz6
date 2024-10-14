@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,9 +17,9 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_ROT_INSTANCE_
-#define _WBZ65_ROT_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_ROT_INSTANCE_
+#define _PIC32CXBZ62_ROT_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for ROT peripheral ========== */
@@ -36,4 +36,4 @@
 #define ROT_SYMMETRIC_SECURE_BOOT                (0)        /* Secure boot using ECCDSA authentication */
 #define ROT_TPWRUP_VDDQ_NS                       (4000)     
 
-#endif /* _WBZ65_ROT_INSTANCE_ */
+#endif /* _PIC32CXBZ62_ROT_INSTANCE_ */

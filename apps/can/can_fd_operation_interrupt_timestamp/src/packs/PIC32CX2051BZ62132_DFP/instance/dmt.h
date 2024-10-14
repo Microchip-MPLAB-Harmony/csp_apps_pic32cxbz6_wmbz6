@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,13 +17,13 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_DMT_INSTANCE_
-#define _WBZ65_DMT_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_DMT_INSTANCE_
+#define _PIC32CXBZ62_DMT_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DMT peripheral ========== */
 #define DMT_HOLDREG_PRESENT                      (1)        /* Used for 16 bit devices only */
 #define DMT_UPB_ADDRL                            (0xE00)    /* Base address for the macro */
 
-#endif /* _WBZ65_DMT_INSTANCE_ */
+#endif /* _PIC32CXBZ62_DMT_INSTANCE_ */

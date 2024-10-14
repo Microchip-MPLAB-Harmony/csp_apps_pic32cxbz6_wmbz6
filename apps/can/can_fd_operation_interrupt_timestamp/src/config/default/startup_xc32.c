@@ -86,16 +86,6 @@ __STATIC_INLINE void __attribute__((optimize("-O1"))) CMCC_Configure(void)
 }
 
 
-__STATIC_INLINE void  __attribute__((optimize("-O1")))  RAM_Initialize(void)
-{
-    register uint32_t *pRam;
-    
-    for (pRam = (uint32_t*)0x20000000U ; pRam < ((uint32_t*)(0x20000000U + 78000U)) ; pRam++)
-    {
-        *pRam = 0U;
-    }
-}
-
 
 #if (__ARM_FP==14) || (__ARM_FP==4)
 
@@ -130,8 +120,6 @@ void __attribute__((optimize("-O1"),long_call))Dummy_App_Func(void)
  */
 void __attribute__((optimize("-O1"), section(".text.Reset_Handler"), long_call, noreturn)) Reset_Handler(void)
 {
-    RAM_Initialize();
-
 #ifdef SCB_VTOR_TBLOFF_Msk
     uint32_t *pSrc;
 #endif

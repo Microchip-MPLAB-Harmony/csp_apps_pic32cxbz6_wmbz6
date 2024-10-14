@@ -234,18 +234,14 @@ void SYS_Initialize ( void* data )
 
   
     CLOCK_Initialize();
-    /* Configure Prefetch, Wait States by calling the ROM function whose address is available at address 0xF2D0 */
-    typedef int (*FUNC_PCHE_SETUP)(uint32_t setup);
-    (void)((FUNC_PCHE_SETUP)(*(uint32_t*)0xF2D0))((PCHE_REGS->PCHE_CHECON & (~(PCHE_CHECON_PFMWS_Msk | PCHE_CHECON_ADRWS_Msk | PCHE_CHECON_PREFEN_Msk)))
-                                    | (PCHE_CHECON_PFMWS(4) | PCHE_CHECON_PREFEN(1) | PCHE_CHECON_ADRWS(1)));
 
 
 
 	GPIO_Initialize();
 
-    EVSYS_Initialize();
-
     SERCOM0_USART_Initialize();
+
+    EVSYS_Initialize();
 
     CAN1_Initialize();
 

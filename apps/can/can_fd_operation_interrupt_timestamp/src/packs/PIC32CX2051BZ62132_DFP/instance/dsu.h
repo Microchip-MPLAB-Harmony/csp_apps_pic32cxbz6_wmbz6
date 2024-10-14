@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,9 +17,9 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_DSU_INSTANCE_
-#define _WBZ65_DSU_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_DSU_INSTANCE_
+#define _PIC32CXBZ62_DSU_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DSU peripheral ========== */
@@ -37,4 +37,4 @@
 #define DSU_PERM_ADDR_START1                     (0x44000600) /* Permissible address range start */
 #define DSU_PERM_ADDR_START2                     (0x44003000) /* Second permissible address range start */
 
-#endif /* _WBZ65_DSU_INSTANCE_ */
+#endif /* _PIC32CXBZ62_DSU_INSTANCE_ */

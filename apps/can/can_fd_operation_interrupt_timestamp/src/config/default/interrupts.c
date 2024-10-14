@@ -135,7 +135,7 @@ extern void CVD_Handler                ( void ) __attribute__((weak, alias("Dumm
 extern void QEI_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void CAN0_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void ETH_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void USBCORE_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void USB_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PLL_LOCK_BOOT_Handler      ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PLL_LOCK_USER_Handler      ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void BT_LC_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -216,7 +216,7 @@ const H3DeviceVectors exception_table=
     .pfnCAN0_Handler               = CAN0_Handler,
     .pfnCAN1_Handler               = CAN1_InterruptHandler,
     .pfnETH_Handler                = ETH_Handler,
-    .pfnUSBCORE_Handler            = USBCORE_Handler,
+    .pfnUSB_Handler                = USB_Handler,
     .pfnPLL_LOCK_BOOT_Handler      = PLL_LOCK_BOOT_Handler,
     .pfnPLL_LOCK_USER_Handler      = PLL_LOCK_USER_Handler,
     .pfnBT_LC_Handler              = BT_LC_Handler,

@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,16 +17,16 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_CCL_INSTANCE_
-#define _WBZ65_CCL_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_CCL_INSTANCE_
+#define _PIC32CXBZ62_CCL_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for CCL peripheral ========== */
 #define CCL_CHIP_CCL_LUT_NUM                     (2)        
 #define CCL_CHIP_CCL_PADDR_MSB                   (9)        
-#define CCL_GCLK_ID_                             (0)        
+#define CCL_GCLK_ID                              (0)        
 #define CCL_INSTANCE_ID                          (70)       /* Instance index for CCL */
 #define CCL_PAC_ID                               (70)       /* Index for CCL registers write protection */
 
-#endif /* _WBZ65_CCL_INSTANCE_ */
+#endif /* _PIC32CXBZ62_CCL_INSTANCE_ */

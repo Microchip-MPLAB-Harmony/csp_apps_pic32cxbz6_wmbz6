@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,9 +17,9 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_TCC1_INSTANCE_
-#define _WBZ65_TCC1_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_TCC1_INSTANCE_
+#define _PIC32CXBZ62_TCC1_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TCC1 peripheral ========== */
@@ -43,4 +43,4 @@
 #define TCC1_SIZE                                (24)       
 #define TCC1_SWAP                                (4)        
 
-#endif /* _WBZ65_TCC1_INSTANCE_ */
+#endif /* _PIC32CXBZ62_TCC1_INSTANCE_ */

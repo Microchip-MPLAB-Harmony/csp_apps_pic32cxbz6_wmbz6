@@ -17,12 +17,12 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_ROT_COMPONENT_H_
-#define _WBZ65_ROT_COMPONENT_H_
+/*  file generated from device description file (ATDF) version 2024-09-25T20:48:20Z  */
+#ifndef _PIC32CXBZ62_ROT_COMPONENT_H_
+#define _PIC32CXBZ62_ROT_COMPONENT_H_
 
 /* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR ROT                                          */
+/*                      SOFTWARE API DEFINITION FOR ROT                       */
 /* ************************************************************************** */
 
 /* -------- ROT_SECCFG : (ROT Offset: 0x00) (R/W 32) Secure Configuration HOLDING REGISTER1,2 -------- */
@@ -30,62 +30,62 @@
 
 #define ROT_SECCFG_UUID_LCK_Pos               _UINT32_(4)                                          /* (ROT_SECCFG) Programming lock bits for Unique ID fuses Position */
 #define ROT_SECCFG_UUID_LCK_Msk               (_UINT32_(0x3) << ROT_SECCFG_UUID_LCK_Pos)           /* (ROT_SECCFG) Programming lock bits for Unique ID fuses Mask */
-#define ROT_SECCFG_UUID_LCK(value)            (ROT_SECCFG_UUID_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_UUID_LCK_Pos)) /* Assigment of value for UUID_LCK in the ROT_SECCFG register */
+#define ROT_SECCFG_UUID_LCK(value)            (ROT_SECCFG_UUID_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_UUID_LCK_Pos)) /* Assignment of value for UUID_LCK in the ROT_SECCFG register */
 #define   ROT_SECCFG_UUID_LCK_0_Val           _UINT32_(0x0)                                        /* (ROT_SECCFG) Unique ID is not locked  */
 #define   ROT_SECCFG_UUID_LCK_1_Val           _UINT32_(0x1)                                        /* (ROT_SECCFG) Unique ID is locked and cannot be programmed  */
 #define   ROT_SECCFG_UUID_LCK_2_Val           _UINT32_(0x2)                                        /* (ROT_SECCFG) Unique ID is locked and cannot be programmed  */
 #define   ROT_SECCFG_UUID_LCK_3_Val           _UINT32_(0x3)                                        /* (ROT_SECCFG) Unique ID is locked and cannot be programmed  */
-#define ROT_SECCFG_UUID_LCK_0                 (ROT_SECCFG_UUID_LCK_0_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is not locked Position  */
-#define ROT_SECCFG_UUID_LCK_1                 (ROT_SECCFG_UUID_LCK_1_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is locked and cannot be programmed Position  */
-#define ROT_SECCFG_UUID_LCK_2                 (ROT_SECCFG_UUID_LCK_2_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is locked and cannot be programmed Position  */
-#define ROT_SECCFG_UUID_LCK_3                 (ROT_SECCFG_UUID_LCK_3_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is locked and cannot be programmed Position  */
+#define ROT_SECCFG_UUID_LCK_0                 (ROT_SECCFG_UUID_LCK_0_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is not locked Position */
+#define ROT_SECCFG_UUID_LCK_1                 (ROT_SECCFG_UUID_LCK_1_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is locked and cannot be programmed Position */
+#define ROT_SECCFG_UUID_LCK_2                 (ROT_SECCFG_UUID_LCK_2_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is locked and cannot be programmed Position */
+#define ROT_SECCFG_UUID_LCK_3                 (ROT_SECCFG_UUID_LCK_3_Val << ROT_SECCFG_UUID_LCK_Pos) /* (ROT_SECCFG) Unique ID is locked and cannot be programmed Position */
 #define ROT_SECCFG_DEBUG_LCK_Pos              _UINT32_(6)                                          /* (ROT_SECCFG) Lock bits for debug/programming Position */
 #define ROT_SECCFG_DEBUG_LCK_Msk              (_UINT32_(0x3) << ROT_SECCFG_DEBUG_LCK_Pos)          /* (ROT_SECCFG) Lock bits for debug/programming Mask */
-#define ROT_SECCFG_DEBUG_LCK(value)           (ROT_SECCFG_DEBUG_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_DEBUG_LCK_Pos)) /* Assigment of value for DEBUG_LCK in the ROT_SECCFG register */
+#define ROT_SECCFG_DEBUG_LCK(value)           (ROT_SECCFG_DEBUG_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_DEBUG_LCK_Pos)) /* Assignment of value for DEBUG_LCK in the ROT_SECCFG register */
 #define   ROT_SECCFG_DEBUG_LCK_0_Val          _UINT32_(0x0)                                        /* (ROT_SECCFG) Debug is not locked  */
 #define   ROT_SECCFG_DEBUG_LCK_1_Val          _UINT32_(0x1)                                        /* (ROT_SECCFG) Debug is locked  */
 #define   ROT_SECCFG_DEBUG_LCK_2_Val          _UINT32_(0x2)                                        /* (ROT_SECCFG) Debug is locked  */
 #define   ROT_SECCFG_DEBUG_LCK_3_Val          _UINT32_(0x3)                                        /* (ROT_SECCFG) Debug is locked  */
-#define ROT_SECCFG_DEBUG_LCK_0                (ROT_SECCFG_DEBUG_LCK_0_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is not locked Position  */
-#define ROT_SECCFG_DEBUG_LCK_1                (ROT_SECCFG_DEBUG_LCK_1_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is locked Position  */
-#define ROT_SECCFG_DEBUG_LCK_2                (ROT_SECCFG_DEBUG_LCK_2_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is locked Position  */
-#define ROT_SECCFG_DEBUG_LCK_3                (ROT_SECCFG_DEBUG_LCK_3_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is locked Position  */
+#define ROT_SECCFG_DEBUG_LCK_0                (ROT_SECCFG_DEBUG_LCK_0_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is not locked Position */
+#define ROT_SECCFG_DEBUG_LCK_1                (ROT_SECCFG_DEBUG_LCK_1_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is locked Position */
+#define ROT_SECCFG_DEBUG_LCK_2                (ROT_SECCFG_DEBUG_LCK_2_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is locked Position */
+#define ROT_SECCFG_DEBUG_LCK_3                (ROT_SECCFG_DEBUG_LCK_3_Val << ROT_SECCFG_DEBUG_LCK_Pos) /* (ROT_SECCFG) Debug is locked Position */
 #define ROT_SECCFG_ROOT_KEY_LCK_Pos           _UINT32_(8)                                          /* (ROT_SECCFG) Lock bits for storage root Key Position */
 #define ROT_SECCFG_ROOT_KEY_LCK_Msk           (_UINT32_(0x3) << ROT_SECCFG_ROOT_KEY_LCK_Pos)       /* (ROT_SECCFG) Lock bits for storage root Key Mask */
-#define ROT_SECCFG_ROOT_KEY_LCK(value)        (ROT_SECCFG_ROOT_KEY_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_ROOT_KEY_LCK_Pos)) /* Assigment of value for ROOT_KEY_LCK in the ROT_SECCFG register */
+#define ROT_SECCFG_ROOT_KEY_LCK(value)        (ROT_SECCFG_ROOT_KEY_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_ROOT_KEY_LCK_Pos)) /* Assignment of value for ROOT_KEY_LCK in the ROT_SECCFG register */
 #define   ROT_SECCFG_ROOT_KEY_LCK_0_Val       _UINT32_(0x0)                                        /* (ROT_SECCFG) Storage root key is not locked  */
 #define   ROT_SECCFG_ROOT_KEY_LCK_1_Val       _UINT32_(0x1)                                        /* (ROT_SECCFG) Storage root key is locked and cannot be programmed  */
 #define   ROT_SECCFG_ROOT_KEY_LCK_2_Val       _UINT32_(0x2)                                        /* (ROT_SECCFG) Storage root key is locked and cannot be programmed  */
 #define   ROT_SECCFG_ROOT_KEY_LCK_3_Val       _UINT32_(0x3)                                        /* (ROT_SECCFG) Storage root key is locked and cannot be programmed  */
-#define ROT_SECCFG_ROOT_KEY_LCK_0             (ROT_SECCFG_ROOT_KEY_LCK_0_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is not locked Position  */
-#define ROT_SECCFG_ROOT_KEY_LCK_1             (ROT_SECCFG_ROOT_KEY_LCK_1_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is locked and cannot be programmed Position  */
-#define ROT_SECCFG_ROOT_KEY_LCK_2             (ROT_SECCFG_ROOT_KEY_LCK_2_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is locked and cannot be programmed Position  */
-#define ROT_SECCFG_ROOT_KEY_LCK_3             (ROT_SECCFG_ROOT_KEY_LCK_3_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is locked and cannot be programmed Position  */
+#define ROT_SECCFG_ROOT_KEY_LCK_0             (ROT_SECCFG_ROOT_KEY_LCK_0_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is not locked Position */
+#define ROT_SECCFG_ROOT_KEY_LCK_1             (ROT_SECCFG_ROOT_KEY_LCK_1_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is locked and cannot be programmed Position */
+#define ROT_SECCFG_ROOT_KEY_LCK_2             (ROT_SECCFG_ROOT_KEY_LCK_2_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is locked and cannot be programmed Position */
+#define ROT_SECCFG_ROOT_KEY_LCK_3             (ROT_SECCFG_ROOT_KEY_LCK_3_Val << ROT_SECCFG_ROOT_KEY_LCK_Pos) /* (ROT_SECCFG) Storage root key is locked and cannot be programmed Position */
 #define ROT_SECCFG_BOOT_KEY_LCK_Pos           _UINT32_(10)                                         /* (ROT_SECCFG) Lock bits for Secure Boot/OTA Key Position */
 #define ROT_SECCFG_BOOT_KEY_LCK_Msk           (_UINT32_(0x3) << ROT_SECCFG_BOOT_KEY_LCK_Pos)       /* (ROT_SECCFG) Lock bits for Secure Boot/OTA Key Mask */
-#define ROT_SECCFG_BOOT_KEY_LCK(value)        (ROT_SECCFG_BOOT_KEY_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_BOOT_KEY_LCK_Pos)) /* Assigment of value for BOOT_KEY_LCK in the ROT_SECCFG register */
+#define ROT_SECCFG_BOOT_KEY_LCK(value)        (ROT_SECCFG_BOOT_KEY_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_BOOT_KEY_LCK_Pos)) /* Assignment of value for BOOT_KEY_LCK in the ROT_SECCFG register */
 #define   ROT_SECCFG_BOOT_KEY_LCK_0_Val       _UINT32_(0x0)                                        /* (ROT_SECCFG) Secure boot key is not locked  */
 #define   ROT_SECCFG_BOOT_KEY_LCK_1_Val       _UINT32_(0x1)                                        /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed  */
 #define   ROT_SECCFG_BOOT_KEY_LCK_2_Val       _UINT32_(0x2)                                        /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed  */
 #define   ROT_SECCFG_BOOT_KEY_LCK_3_Val       _UINT32_(0x3)                                        /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed  */
-#define ROT_SECCFG_BOOT_KEY_LCK_0             (ROT_SECCFG_BOOT_KEY_LCK_0_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is not locked Position  */
-#define ROT_SECCFG_BOOT_KEY_LCK_1             (ROT_SECCFG_BOOT_KEY_LCK_1_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed Position  */
-#define ROT_SECCFG_BOOT_KEY_LCK_2             (ROT_SECCFG_BOOT_KEY_LCK_2_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed Position  */
-#define ROT_SECCFG_BOOT_KEY_LCK_3             (ROT_SECCFG_BOOT_KEY_LCK_3_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed Position  */
+#define ROT_SECCFG_BOOT_KEY_LCK_0             (ROT_SECCFG_BOOT_KEY_LCK_0_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is not locked Position */
+#define ROT_SECCFG_BOOT_KEY_LCK_1             (ROT_SECCFG_BOOT_KEY_LCK_1_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed Position */
+#define ROT_SECCFG_BOOT_KEY_LCK_2             (ROT_SECCFG_BOOT_KEY_LCK_2_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed Position */
+#define ROT_SECCFG_BOOT_KEY_LCK_3             (ROT_SECCFG_BOOT_KEY_LCK_3_Val << ROT_SECCFG_BOOT_KEY_LCK_Pos) /* (ROT_SECCFG) Secure boot key is locked and cannot be programmed Position */
 #define ROT_SECCFG_PATCH_LCK_Pos              _UINT32_(14)                                         /* (ROT_SECCFG) Lock bits for patch Position */
 #define ROT_SECCFG_PATCH_LCK_Msk              (_UINT32_(0x3) << ROT_SECCFG_PATCH_LCK_Pos)          /* (ROT_SECCFG) Lock bits for patch Mask */
-#define ROT_SECCFG_PATCH_LCK(value)           (ROT_SECCFG_PATCH_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_PATCH_LCK_Pos)) /* Assigment of value for PATCH_LCK in the ROT_SECCFG register */
+#define ROT_SECCFG_PATCH_LCK(value)           (ROT_SECCFG_PATCH_LCK_Msk & (_UINT32_(value) << ROT_SECCFG_PATCH_LCK_Pos)) /* Assignment of value for PATCH_LCK in the ROT_SECCFG register */
 #define   ROT_SECCFG_PATCH_LCK_0_Val          _UINT32_(0x0)                                        /* (ROT_SECCFG) Patch config and code are not locked  */
 #define   ROT_SECCFG_PATCH_LCK_1_Val          _UINT32_(0x1)                                        /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed  */
 #define   ROT_SECCFG_PATCH_LCK_2_Val          _UINT32_(0x2)                                        /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed  */
 #define   ROT_SECCFG_PATCH_LCK_3_Val          _UINT32_(0x3)                                        /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed  */
-#define ROT_SECCFG_PATCH_LCK_0                (ROT_SECCFG_PATCH_LCK_0_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are not locked Position  */
-#define ROT_SECCFG_PATCH_LCK_1                (ROT_SECCFG_PATCH_LCK_1_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed Position  */
-#define ROT_SECCFG_PATCH_LCK_2                (ROT_SECCFG_PATCH_LCK_2_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed Position  */
-#define ROT_SECCFG_PATCH_LCK_3                (ROT_SECCFG_PATCH_LCK_3_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed Position  */
+#define ROT_SECCFG_PATCH_LCK_0                (ROT_SECCFG_PATCH_LCK_0_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are not locked Position */
+#define ROT_SECCFG_PATCH_LCK_1                (ROT_SECCFG_PATCH_LCK_1_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed Position */
+#define ROT_SECCFG_PATCH_LCK_2                (ROT_SECCFG_PATCH_LCK_2_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed Position */
+#define ROT_SECCFG_PATCH_LCK_3                (ROT_SECCFG_PATCH_LCK_3_Val << ROT_SECCFG_PATCH_LCK_Pos) /* (ROT_SECCFG) Patch config and code are locked and cannot be programmed Position */
 #define ROT_SECCFG_ADD_BOOT_KEY_Pos           _UINT32_(16)                                         /* (ROT_SECCFG) Additional boot Key bit Position */
 #define ROT_SECCFG_ADD_BOOT_KEY_Msk           (_UINT32_(0x1) << ROT_SECCFG_ADD_BOOT_KEY_Pos)       /* (ROT_SECCFG) Additional boot Key bit Mask */
-#define ROT_SECCFG_ADD_BOOT_KEY(value)        (ROT_SECCFG_ADD_BOOT_KEY_Msk & (_UINT32_(value) << ROT_SECCFG_ADD_BOOT_KEY_Pos)) /* Assigment of value for ADD_BOOT_KEY in the ROT_SECCFG register */
+#define ROT_SECCFG_ADD_BOOT_KEY(value)        (ROT_SECCFG_ADD_BOOT_KEY_Msk & (_UINT32_(value) << ROT_SECCFG_ADD_BOOT_KEY_Pos)) /* Assignment of value for ADD_BOOT_KEY in the ROT_SECCFG register */
 #define ROT_SECCFG_Msk                        _UINT32_(0x0001CFF0)                                 /* (ROT_SECCFG) Register Mask  */
 
 
@@ -94,7 +94,7 @@
 
 #define ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos _UINT32_(0)                                          /* (ROT_ANTIROLLBACKCOUNTER) Anti rollback counter bits Position */
 #define ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Msk (_UINT32_(0xFF) << ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos) /* (ROT_ANTIROLLBACKCOUNTER) Anti rollback counter bits Mask */
-#define ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER(value) (ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Msk & (_UINT32_(value) << ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos)) /* Assigment of value for ANTIROLLBACKCOUNTER in the ROT_ANTIROLLBACKCOUNTER register */
+#define ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER(value) (ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Msk & (_UINT32_(value) << ROT_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos)) /* Assignment of value for ANTIROLLBACKCOUNTER in the ROT_ANTIROLLBACKCOUNTER register */
 #define ROT_ANTIROLLBACKCOUNTER_Msk           _UINT32_(0x000000FF)                                 /* (ROT_ANTIROLLBACKCOUNTER) Register Mask  */
 
 
@@ -103,10 +103,10 @@
 
 #define ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER_Pos _UINT32_(0)                                          /* (ROT_LIFECYCLECTR_BOOTKEY) Life cycle counter bits Position */
 #define ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER_Msk (_UINT32_(0xF) << ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER_Pos) /* (ROT_LIFECYCLECTR_BOOTKEY) Life cycle counter bits Mask */
-#define ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER(value) (ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER_Msk & (_UINT32_(value) << ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER_Pos)) /* Assigment of value for LIFECYCLECOUNTER in the ROT_LIFECYCLECTR_BOOTKEY register */
+#define ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER(value) (ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER_Msk & (_UINT32_(value) << ROT_LIFECYCLECTR_BOOTKEY_LIFECYCLECOUNTER_Pos)) /* Assignment of value for LIFECYCLECOUNTER in the ROT_LIFECYCLECTR_BOOTKEY register */
 #define ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2_Pos _UINT32_(16)                                         /* (ROT_LIFECYCLECTR_BOOTKEY) Secure boot key bits Position */
 #define ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2_Msk (_UINT32_(0xFFFF) << ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2_Pos) /* (ROT_LIFECYCLECTR_BOOTKEY) Secure boot key bits Mask */
-#define ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2(value) (ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2_Msk & (_UINT32_(value) << ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2_Pos)) /* Assigment of value for SECUREBOOTKEY_1_2 in the ROT_LIFECYCLECTR_BOOTKEY register */
+#define ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2(value) (ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2_Msk & (_UINT32_(value) << ROT_LIFECYCLECTR_BOOTKEY_SECUREBOOTKEY_1_2_Pos)) /* Assignment of value for SECUREBOOTKEY_1_2 in the ROT_LIFECYCLECTR_BOOTKEY register */
 #define ROT_LIFECYCLECTR_BOOTKEY_Msk          _UINT32_(0xFFFF000F)                                 /* (ROT_LIFECYCLECTR_BOOTKEY) Register Mask  */
 
 
@@ -115,7 +115,7 @@
 
 #define ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46_Pos _UINT32_(0)                                          /* (ROT_SECUREBOOTKEY_3_46) Secure boot key bits Position */
 #define ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46_Msk (_UINT32_(0xFFFFFFFF) << ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46_Pos) /* (ROT_SECUREBOOTKEY_3_46) Secure boot key bits Mask */
-#define ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46(value) (ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46_Msk & (_UINT32_(value) << ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46_Pos)) /* Assigment of value for SECUREBOOTKEY_3_46 in the ROT_SECUREBOOTKEY_3_46 register */
+#define ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46(value) (ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46_Msk & (_UINT32_(value) << ROT_SECUREBOOTKEY_3_46_SECUREBOOTKEY_3_46_Pos)) /* Assignment of value for SECUREBOOTKEY_3_46 in the ROT_SECUREBOOTKEY_3_46 register */
 #define ROT_SECUREBOOTKEY_3_46_Msk            _UINT32_(0xFFFFFFFF)                                 /* (ROT_SECUREBOOTKEY_3_46) Register Mask  */
 
 
@@ -124,10 +124,10 @@
 
 #define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48_Pos _UINT32_(0)                                          /* (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY) Secure boot key bits Position */
 #define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48_Msk (_UINT32_(0xFFFF) << ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48_Pos) /* (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY) Secure boot key bits Mask */
-#define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48(value) (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48_Msk & (_UINT32_(value) << ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48_Pos)) /* Assigment of value for SECUREBOOTKEY_47_48 in the ROT_SECUREBOOTKEY_47_48_STORAGE_KEY register */
+#define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48(value) (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48_Msk & (_UINT32_(value) << ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_SECUREBOOTKEY_47_48_Pos)) /* Assignment of value for SECUREBOOTKEY_47_48 in the ROT_SECUREBOOTKEY_47_48_STORAGE_KEY register */
 #define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2_Pos _UINT32_(16)                                         /* (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY) Storage root key bits Position */
 #define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2_Msk (_UINT32_(0xFFFF) << ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2_Pos) /* (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY) Storage root key bits Mask */
-#define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2(value) (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2_Msk & (_UINT32_(value) << ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2_Pos)) /* Assigment of value for STORAGE_KEY_1_2 in the ROT_SECUREBOOTKEY_47_48_STORAGE_KEY register */
+#define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2(value) (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2_Msk & (_UINT32_(value) << ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_STORAGE_KEY_1_2_Pos)) /* Assignment of value for STORAGE_KEY_1_2 in the ROT_SECUREBOOTKEY_47_48_STORAGE_KEY register */
 #define ROT_SECUREBOOTKEY_47_48_STORAGE_KEY_Msk _UINT32_(0xFFFFFFFF)                                 /* (ROT_SECUREBOOTKEY_47_48_STORAGE_KEY) Register Mask  */
 
 
@@ -136,7 +136,7 @@
 
 #define ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30_Pos _UINT32_(0)                                          /* (ROT_STORAGE_KEY_3_30) Storage Key bits Position */
 #define ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30_Msk (_UINT32_(0xFFFFFFFF) << ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30_Pos) /* (ROT_STORAGE_KEY_3_30) Storage Key bits Mask */
-#define ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30(value) (ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30_Pos)) /* Assigment of value for STORAGE_KEY_3_30 in the ROT_STORAGE_KEY_3_30 register */
+#define ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30(value) (ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_3_30_STORAGE_KEY_3_30_Pos)) /* Assignment of value for STORAGE_KEY_3_30 in the ROT_STORAGE_KEY_3_30 register */
 #define ROT_STORAGE_KEY_3_30_Msk              _UINT32_(0xFFFFFFFF)                                 /* (ROT_STORAGE_KEY_3_30) Register Mask  */
 
 
@@ -145,29 +145,29 @@
 
 #define ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32_Pos _UINT32_(0)                                          /* (ROT_STORAGE_KEY_FFCFG) Storage Key bits Position */
 #define ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32_Msk (_UINT32_(0xFFFF) << ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32_Pos) /* (ROT_STORAGE_KEY_FFCFG) Storage Key bits Mask */
-#define ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32(value) (ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32_Pos)) /* Assigment of value for STORAGE_KEY_31_32 in the ROT_STORAGE_KEY_FFCFG register */
+#define ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32(value) (ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_FFCFG_STORAGE_KEY_31_32_Pos)) /* Assignment of value for STORAGE_KEY_31_32 in the ROT_STORAGE_KEY_FFCFG register */
 #define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos  _UINT32_(20)                                         /* (ROT_STORAGE_KEY_FFCFG) Device ID bits Position */
 #define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Msk  (_UINT32_(0x3) << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID bits Mask */
-#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK(value) (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos)) /* Assigment of value for DEV_ID_LCK in the ROT_STORAGE_KEY_FFCFG register */
+#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK(value) (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos)) /* Assignment of value for DEV_ID_LCK in the ROT_STORAGE_KEY_FFCFG register */
 #define   ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_0_Val _UINT32_(0x0)                                        /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are not locked  */
 #define   ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_1_Val _UINT32_(0x1)                                        /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed  */
 #define   ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_2_Val _UINT32_(0x2)                                        /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed  */
 #define   ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_3_Val _UINT32_(0x3)                                        /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed  */
-#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_0    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_0_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are not locked Position  */
-#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_1    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_1_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed Position  */
-#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_2    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_2_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed Position  */
-#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_3    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_3_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed Position  */
+#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_0    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_0_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are not locked Position */
+#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_1    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_1_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed Position */
+#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_2    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_2_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed Position */
+#define ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_3    (ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_3_Val << ROT_STORAGE_KEY_FFCFG_DEV_ID_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Device ID fuses are locked and cannot be programmed Position */
 #define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos _UINT32_(30)                                         /* (ROT_STORAGE_KEY_FFCFG) Die info bits Position */
 #define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Msk (_UINT32_(0x3) << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die info bits Mask */
-#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK(value) (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos)) /* Assigment of value for DIE_INFO_LCK in the ROT_STORAGE_KEY_FFCFG register */
+#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK(value) (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Msk & (_UINT32_(value) << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos)) /* Assignment of value for DIE_INFO_LCK in the ROT_STORAGE_KEY_FFCFG register */
 #define   ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_0_Val _UINT32_(0x0)                                        /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are not locked  */
 #define   ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_1_Val _UINT32_(0x1)                                        /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed  */
 #define   ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_2_Val _UINT32_(0x2)                                        /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed  */
 #define   ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_3_Val _UINT32_(0x3)                                        /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed  */
-#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_0  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_0_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are not locked Position  */
-#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_1  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_1_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed Position  */
-#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_2  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_2_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed Position  */
-#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_3  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_3_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed Position  */
+#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_0  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_0_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are not locked Position */
+#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_1  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_1_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed Position */
+#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_2  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_2_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed Position */
+#define ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_3  (ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_3_Val << ROT_STORAGE_KEY_FFCFG_DIE_INFO_LCK_Pos) /* (ROT_STORAGE_KEY_FFCFG) Die information fuses are locked and cannot be programmed Position */
 #define ROT_STORAGE_KEY_FFCFG_Msk             _UINT32_(0xC030FFFF)                                 /* (ROT_STORAGE_KEY_FFCFG) Register Mask  */
 
 
@@ -176,10 +176,10 @@
 
 #define ROT_DEVICE_ID_PATCH_CFG_VSEL_Pos      _UINT32_(0)                                          /* (ROT_DEVICE_ID_PATCH_CFG) VSEL of device ID Position */
 #define ROT_DEVICE_ID_PATCH_CFG_VSEL_Msk      (_UINT32_(0xFF) << ROT_DEVICE_ID_PATCH_CFG_VSEL_Pos) /* (ROT_DEVICE_ID_PATCH_CFG) VSEL of device ID Mask */
-#define ROT_DEVICE_ID_PATCH_CFG_VSEL(value)   (ROT_DEVICE_ID_PATCH_CFG_VSEL_Msk & (_UINT32_(value) << ROT_DEVICE_ID_PATCH_CFG_VSEL_Pos)) /* Assigment of value for VSEL in the ROT_DEVICE_ID_PATCH_CFG register */
+#define ROT_DEVICE_ID_PATCH_CFG_VSEL(value)   (ROT_DEVICE_ID_PATCH_CFG_VSEL_Msk & (_UINT32_(value) << ROT_DEVICE_ID_PATCH_CFG_VSEL_Pos)) /* Assignment of value for VSEL in the ROT_DEVICE_ID_PATCH_CFG register */
 #define ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB_Pos _UINT32_(16)                                         /* (ROT_DEVICE_ID_PATCH_CFG) Patch CFG-1 lower 16 bits Position */
 #define ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB_Msk (_UINT32_(0xFFFF) << ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB_Pos) /* (ROT_DEVICE_ID_PATCH_CFG) Patch CFG-1 lower 16 bits Mask */
-#define ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB(value) (ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB_Msk & (_UINT32_(value) << ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB_Pos)) /* Assigment of value for PATCH_CFG1_LB in the ROT_DEVICE_ID_PATCH_CFG register */
+#define ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB(value) (ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB_Msk & (_UINT32_(value) << ROT_DEVICE_ID_PATCH_CFG_PATCH_CFG1_LB_Pos)) /* Assignment of value for PATCH_CFG1_LB in the ROT_DEVICE_ID_PATCH_CFG register */
 #define ROT_DEVICE_ID_PATCH_CFG_Msk           _UINT32_(0xFFFF00FF)                                 /* (ROT_DEVICE_ID_PATCH_CFG) Register Mask  */
 
 
@@ -188,10 +188,10 @@
 
 #define ROT_PATCH_CFG_PATCH_CFG1_HB_Pos       _UINT32_(0)                                          /* (ROT_PATCH_CFG) Patch CFG-1 higher 8 bits Position */
 #define ROT_PATCH_CFG_PATCH_CFG1_HB_Msk       (_UINT32_(0xFF) << ROT_PATCH_CFG_PATCH_CFG1_HB_Pos)  /* (ROT_PATCH_CFG) Patch CFG-1 higher 8 bits Mask */
-#define ROT_PATCH_CFG_PATCH_CFG1_HB(value)    (ROT_PATCH_CFG_PATCH_CFG1_HB_Msk & (_UINT32_(value) << ROT_PATCH_CFG_PATCH_CFG1_HB_Pos)) /* Assigment of value for PATCH_CFG1_HB in the ROT_PATCH_CFG register */
+#define ROT_PATCH_CFG_PATCH_CFG1_HB(value)    (ROT_PATCH_CFG_PATCH_CFG1_HB_Msk & (_UINT32_(value) << ROT_PATCH_CFG_PATCH_CFG1_HB_Pos)) /* Assignment of value for PATCH_CFG1_HB in the ROT_PATCH_CFG register */
 #define ROT_PATCH_CFG_PATCH_CFG2_Pos          _UINT32_(8)                                          /* (ROT_PATCH_CFG) Patch CFG-2 bits Position */
 #define ROT_PATCH_CFG_PATCH_CFG2_Msk          (_UINT32_(0xFFFFFF) << ROT_PATCH_CFG_PATCH_CFG2_Pos) /* (ROT_PATCH_CFG) Patch CFG-2 bits Mask */
-#define ROT_PATCH_CFG_PATCH_CFG2(value)       (ROT_PATCH_CFG_PATCH_CFG2_Msk & (_UINT32_(value) << ROT_PATCH_CFG_PATCH_CFG2_Pos)) /* Assigment of value for PATCH_CFG2 in the ROT_PATCH_CFG register */
+#define ROT_PATCH_CFG_PATCH_CFG2(value)       (ROT_PATCH_CFG_PATCH_CFG2_Msk & (_UINT32_(value) << ROT_PATCH_CFG_PATCH_CFG2_Pos)) /* Assignment of value for PATCH_CFG2 in the ROT_PATCH_CFG register */
 #define ROT_PATCH_CFG_Msk                     _UINT32_(0xFFFFFFFF)                                 /* (ROT_PATCH_CFG) Register Mask  */
 
 
@@ -200,7 +200,7 @@
 
 #define ROT_PATCH_CODE_PATCH_CODE_Pos         _UINT32_(0)                                          /* (ROT_PATCH_CODE) Patch Code bits Position */
 #define ROT_PATCH_CODE_PATCH_CODE_Msk         (_UINT32_(0xFFFFFFFF) << ROT_PATCH_CODE_PATCH_CODE_Pos) /* (ROT_PATCH_CODE) Patch Code bits Mask */
-#define ROT_PATCH_CODE_PATCH_CODE(value)      (ROT_PATCH_CODE_PATCH_CODE_Msk & (_UINT32_(value) << ROT_PATCH_CODE_PATCH_CODE_Pos)) /* Assigment of value for PATCH_CODE in the ROT_PATCH_CODE register */
+#define ROT_PATCH_CODE_PATCH_CODE(value)      (ROT_PATCH_CODE_PATCH_CODE_Msk & (_UINT32_(value) << ROT_PATCH_CODE_PATCH_CODE_Pos)) /* Assignment of value for PATCH_CODE in the ROT_PATCH_CODE register */
 #define ROT_PATCH_CODE_Msk                    _UINT32_(0xFFFFFFFF)                                 /* (ROT_PATCH_CODE) Register Mask  */
 
 
@@ -209,7 +209,7 @@
 
 #define ROT_UUID_UUID_Pos                     _UINT32_(0)                                          /* (ROT_UUID) Unique ID bits Position */
 #define ROT_UUID_UUID_Msk                     (_UINT32_(0xFFFFFFFF) << ROT_UUID_UUID_Pos)          /* (ROT_UUID) Unique ID bits Mask */
-#define ROT_UUID_UUID(value)                  (ROT_UUID_UUID_Msk & (_UINT32_(value) << ROT_UUID_UUID_Pos)) /* Assigment of value for UUID in the ROT_UUID register */
+#define ROT_UUID_UUID(value)                  (ROT_UUID_UUID_Msk & (_UINT32_(value) << ROT_UUID_UUID_Pos)) /* Assignment of value for UUID in the ROT_UUID register */
 #define ROT_UUID_Msk                          _UINT32_(0xFFFFFFFF)                                 /* (ROT_UUID) Register Mask  */
 
 
@@ -218,40 +218,40 @@
 
 #define ROT_SEC_BOOT_SEC_BOOT_REQD_Pos        _UINT32_(0)                                          /* (ROT_SEC_BOOT) Bits to indicate that secure boot is required on the next device reset. Position */
 #define ROT_SEC_BOOT_SEC_BOOT_REQD_Msk        (_UINT32_(0x3) << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos)    /* (ROT_SEC_BOOT) Bits to indicate that secure boot is required on the next device reset. Mask */
-#define ROT_SEC_BOOT_SEC_BOOT_REQD(value)     (ROT_SEC_BOOT_SEC_BOOT_REQD_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos)) /* Assigment of value for SEC_BOOT_REQD in the ROT_SEC_BOOT register */
+#define ROT_SEC_BOOT_SEC_BOOT_REQD(value)     (ROT_SEC_BOOT_SEC_BOOT_REQD_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos)) /* Assignment of value for SEC_BOOT_REQD in the ROT_SEC_BOOT register */
 #define   ROT_SEC_BOOT_SEC_BOOT_REQD_0_Val    _UINT32_(0x0)                                        /* (ROT_SEC_BOOT) S ecure boot code authentication is required  */
 #define   ROT_SEC_BOOT_SEC_BOOT_REQD_1_Val    _UINT32_(0x1)                                        /* (ROT_SEC_BOOT) S ecure boot code authentication is NOT required  */
 #define   ROT_SEC_BOOT_SEC_BOOT_REQD_2_Val    _UINT32_(0x2)                                        /* (ROT_SEC_BOOT) S ecure boot code authentication is NOT required  */
 #define   ROT_SEC_BOOT_SEC_BOOT_REQD_3_Val    _UINT32_(0x3)                                        /* (ROT_SEC_BOOT) S ecure boot code authentication is required  */
-#define ROT_SEC_BOOT_SEC_BOOT_REQD_0          (ROT_SEC_BOOT_SEC_BOOT_REQD_0_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is required Position  */
-#define ROT_SEC_BOOT_SEC_BOOT_REQD_1          (ROT_SEC_BOOT_SEC_BOOT_REQD_1_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is NOT required Position  */
-#define ROT_SEC_BOOT_SEC_BOOT_REQD_2          (ROT_SEC_BOOT_SEC_BOOT_REQD_2_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is NOT required Position  */
-#define ROT_SEC_BOOT_SEC_BOOT_REQD_3          (ROT_SEC_BOOT_SEC_BOOT_REQD_3_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is required Position  */
+#define ROT_SEC_BOOT_SEC_BOOT_REQD_0          (ROT_SEC_BOOT_SEC_BOOT_REQD_0_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is required Position */
+#define ROT_SEC_BOOT_SEC_BOOT_REQD_1          (ROT_SEC_BOOT_SEC_BOOT_REQD_1_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is NOT required Position */
+#define ROT_SEC_BOOT_SEC_BOOT_REQD_2          (ROT_SEC_BOOT_SEC_BOOT_REQD_2_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is NOT required Position */
+#define ROT_SEC_BOOT_SEC_BOOT_REQD_3          (ROT_SEC_BOOT_SEC_BOOT_REQD_3_Val << ROT_SEC_BOOT_SEC_BOOT_REQD_Pos) /* (ROT_SEC_BOOT) S ecure boot code authentication is required Position */
 #define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos  _UINT32_(4)                                          /* (ROT_SEC_BOOT) Bits to indicate whether the Flash contents have been changed since the last code authentication operation Position */
 #define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Msk  (_UINT32_(0x3) << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Bits to indicate whether the Flash contents have been changed since the last code authentication operation Mask */
-#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY(value) (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos)) /* Assigment of value for SEC_FLASH_NOT_DIRTY in the ROT_SEC_BOOT register */
+#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY(value) (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos)) /* Assignment of value for SEC_FLASH_NOT_DIRTY in the ROT_SEC_BOOT register */
 #define   ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_0_Val _UINT32_(0x0)                                        /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication  */
 #define   ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_1_Val _UINT32_(0x1)                                        /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication  */
 #define   ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_2_Val _UINT32_(0x2)                                        /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication  */
 #define   ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_3_Val _UINT32_(0x3)                                        /* (ROT_SEC_BOOT) Flash contents have not changed since the last authentication  */
-#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_0    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_0_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication Position  */
-#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_1    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_1_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication Position  */
-#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_2    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_2_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication Position  */
-#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_3    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_3_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have not changed since the last authentication Position  */
+#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_0    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_0_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication Position */
+#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_1    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_1_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication Position */
+#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_2    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_2_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have changed since the last authentication Position */
+#define ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_3    (ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_3_Val << ROT_SEC_BOOT_SEC_FLASH_NOT_DIRTY_Pos) /* (ROT_SEC_BOOT) Flash contents have not changed since the last authentication Position */
 #define ROT_SEC_BOOT_SEC_BOOT_STATUS_Pos      _UINT32_(8)                                          /* (ROT_SEC_BOOT) Bits to indicate that secure boot status Position */
 #define ROT_SEC_BOOT_SEC_BOOT_STATUS_Msk      (_UINT32_(0xFF) << ROT_SEC_BOOT_SEC_BOOT_STATUS_Pos) /* (ROT_SEC_BOOT) Bits to indicate that secure boot status Mask */
-#define ROT_SEC_BOOT_SEC_BOOT_STATUS(value)   (ROT_SEC_BOOT_SEC_BOOT_STATUS_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_BOOT_STATUS_Pos)) /* Assigment of value for SEC_BOOT_STATUS in the ROT_SEC_BOOT register */
+#define ROT_SEC_BOOT_SEC_BOOT_STATUS(value)   (ROT_SEC_BOOT_SEC_BOOT_STATUS_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_BOOT_STATUS_Pos)) /* Assignment of value for SEC_BOOT_STATUS in the ROT_SEC_BOOT register */
 #define ROT_SEC_BOOT_SEC_BOOT_DONE_Pos        _UINT32_(16)                                         /* (ROT_SEC_BOOT) Bits to indicate that secure boot is done Position */
 #define ROT_SEC_BOOT_SEC_BOOT_DONE_Msk        (_UINT32_(0x3) << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos)    /* (ROT_SEC_BOOT) Bits to indicate that secure boot is done Mask */
-#define ROT_SEC_BOOT_SEC_BOOT_DONE(value)     (ROT_SEC_BOOT_SEC_BOOT_DONE_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos)) /* Assigment of value for SEC_BOOT_DONE in the ROT_SEC_BOOT register */
+#define ROT_SEC_BOOT_SEC_BOOT_DONE(value)     (ROT_SEC_BOOT_SEC_BOOT_DONE_Msk & (_UINT32_(value) << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos)) /* Assignment of value for SEC_BOOT_DONE in the ROT_SEC_BOOT register */
 #define   ROT_SEC_BOOT_SEC_BOOT_DONE_0_Val    _UINT32_(0x0)                                        /* (ROT_SEC_BOOT) S ecure boot is done  */
 #define   ROT_SEC_BOOT_SEC_BOOT_DONE_1_Val    _UINT32_(0x1)                                        /* (ROT_SEC_BOOT) S ecure boot is not done  */
 #define   ROT_SEC_BOOT_SEC_BOOT_DONE_2_Val    _UINT32_(0x2)                                        /* (ROT_SEC_BOOT) S ecure boot is not done  */
 #define   ROT_SEC_BOOT_SEC_BOOT_DONE_3_Val    _UINT32_(0x3)                                        /* (ROT_SEC_BOOT) S ecure boot is done  */
-#define ROT_SEC_BOOT_SEC_BOOT_DONE_0          (ROT_SEC_BOOT_SEC_BOOT_DONE_0_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is done Position  */
-#define ROT_SEC_BOOT_SEC_BOOT_DONE_1          (ROT_SEC_BOOT_SEC_BOOT_DONE_1_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is not done Position  */
-#define ROT_SEC_BOOT_SEC_BOOT_DONE_2          (ROT_SEC_BOOT_SEC_BOOT_DONE_2_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is not done Position  */
-#define ROT_SEC_BOOT_SEC_BOOT_DONE_3          (ROT_SEC_BOOT_SEC_BOOT_DONE_3_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is done Position  */
+#define ROT_SEC_BOOT_SEC_BOOT_DONE_0          (ROT_SEC_BOOT_SEC_BOOT_DONE_0_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is done Position */
+#define ROT_SEC_BOOT_SEC_BOOT_DONE_1          (ROT_SEC_BOOT_SEC_BOOT_DONE_1_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is not done Position */
+#define ROT_SEC_BOOT_SEC_BOOT_DONE_2          (ROT_SEC_BOOT_SEC_BOOT_DONE_2_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is not done Position */
+#define ROT_SEC_BOOT_SEC_BOOT_DONE_3          (ROT_SEC_BOOT_SEC_BOOT_DONE_3_Val << ROT_SEC_BOOT_SEC_BOOT_DONE_Pos) /* (ROT_SEC_BOOT) S ecure boot is done Position */
 #define ROT_SEC_BOOT_Msk                      _UINT32_(0x0003FF33)                                 /* (ROT_SEC_BOOT) Register Mask  */
 
 
@@ -260,10 +260,10 @@
 
 #define ROT_EFUSE_RWDATA_DATA_Pos             _UINT32_(0)                                          /* (ROT_EFUSE_RWDATA) eFuse Program (Write) Data Position */
 #define ROT_EFUSE_RWDATA_DATA_Msk             (_UINT32_(0xFF) << ROT_EFUSE_RWDATA_DATA_Pos)        /* (ROT_EFUSE_RWDATA) eFuse Program (Write) Data Mask */
-#define ROT_EFUSE_RWDATA_DATA(value)          (ROT_EFUSE_RWDATA_DATA_Msk & (_UINT32_(value) << ROT_EFUSE_RWDATA_DATA_Pos)) /* Assigment of value for DATA in the ROT_EFUSE_RWDATA register */
+#define ROT_EFUSE_RWDATA_DATA(value)          (ROT_EFUSE_RWDATA_DATA_Msk & (_UINT32_(value) << ROT_EFUSE_RWDATA_DATA_Pos)) /* Assignment of value for DATA in the ROT_EFUSE_RWDATA register */
 #define ROT_EFUSE_RWDATA_ADDR_Pos             _UINT32_(16)                                         /* (ROT_EFUSE_RWDATA) eFuse Program/Read Address Position */
 #define ROT_EFUSE_RWDATA_ADDR_Msk             (_UINT32_(0xFFF) << ROT_EFUSE_RWDATA_ADDR_Pos)       /* (ROT_EFUSE_RWDATA) eFuse Program/Read Address Mask */
-#define ROT_EFUSE_RWDATA_ADDR(value)          (ROT_EFUSE_RWDATA_ADDR_Msk & (_UINT32_(value) << ROT_EFUSE_RWDATA_ADDR_Pos)) /* Assigment of value for ADDR in the ROT_EFUSE_RWDATA register */
+#define ROT_EFUSE_RWDATA_ADDR(value)          (ROT_EFUSE_RWDATA_ADDR_Msk & (_UINT32_(value) << ROT_EFUSE_RWDATA_ADDR_Pos)) /* Assignment of value for ADDR in the ROT_EFUSE_RWDATA register */
 #define ROT_EFUSE_RWDATA_Msk                  _UINT32_(0x0FFF00FF)                                 /* (ROT_EFUSE_RWDATA) Register Mask  */
 
 
@@ -272,46 +272,46 @@
 
 #define ROT_EFUSE_CON_PGM_1BIT_Pos            _UINT32_(0)                                          /* (ROT_EFUSE_CON) eFuse CTRL to program 1 bit at a time. Valid only when EN_PGM is set Position */
 #define ROT_EFUSE_CON_PGM_1BIT_Msk            (_UINT32_(0x1) << ROT_EFUSE_CON_PGM_1BIT_Pos)        /* (ROT_EFUSE_CON) eFuse CTRL to program 1 bit at a time. Valid only when EN_PGM is set Mask */
-#define ROT_EFUSE_CON_PGM_1BIT(value)         (ROT_EFUSE_CON_PGM_1BIT_Msk & (_UINT32_(value) << ROT_EFUSE_CON_PGM_1BIT_Pos)) /* Assigment of value for PGM_1BIT in the ROT_EFUSE_CON register */
+#define ROT_EFUSE_CON_PGM_1BIT(value)         (ROT_EFUSE_CON_PGM_1BIT_Msk & (_UINT32_(value) << ROT_EFUSE_CON_PGM_1BIT_Pos)) /* Assignment of value for PGM_1BIT in the ROT_EFUSE_CON register */
 #define   ROT_EFUSE_CON_PGM_1BIT_0_Val        _UINT32_(0x0)                                        /* (ROT_EFUSE_CON) EFuse controller will program EFUSE_RWDATA.DATA[15:0] to the address in EFUSE_RWDATA.ADDR[11:3]  */
 #define   ROT_EFUSE_CON_PGM_1BIT_1_Val        _UINT32_(0x1)                                        /* (ROT_EFUSE_CON) EFuse controller will program EFUSE_RWDATA.DATA[0] to the address in EFUSE_RWDATA.ADDR[11:0]  */
-#define ROT_EFUSE_CON_PGM_1BIT_0              (ROT_EFUSE_CON_PGM_1BIT_0_Val << ROT_EFUSE_CON_PGM_1BIT_Pos) /* (ROT_EFUSE_CON) EFuse controller will program EFUSE_RWDATA.DATA[15:0] to the address in EFUSE_RWDATA.ADDR[11:3] Position  */
-#define ROT_EFUSE_CON_PGM_1BIT_1              (ROT_EFUSE_CON_PGM_1BIT_1_Val << ROT_EFUSE_CON_PGM_1BIT_Pos) /* (ROT_EFUSE_CON) EFuse controller will program EFUSE_RWDATA.DATA[0] to the address in EFUSE_RWDATA.ADDR[11:0] Position  */
+#define ROT_EFUSE_CON_PGM_1BIT_0              (ROT_EFUSE_CON_PGM_1BIT_0_Val << ROT_EFUSE_CON_PGM_1BIT_Pos) /* (ROT_EFUSE_CON) EFuse controller will program EFUSE_RWDATA.DATA[15:0] to the address in EFUSE_RWDATA.ADDR[11:3] Position */
+#define ROT_EFUSE_CON_PGM_1BIT_1              (ROT_EFUSE_CON_PGM_1BIT_1_Val << ROT_EFUSE_CON_PGM_1BIT_Pos) /* (ROT_EFUSE_CON) EFuse controller will program EFUSE_RWDATA.DATA[0] to the address in EFUSE_RWDATA.ADDR[11:0] Position */
 #define ROT_EFUSE_CON_PGM_MODE_Pos            _UINT32_(1)                                          /* (ROT_EFUSE_CON) eFuse Programming Mode Enable bit Position */
 #define ROT_EFUSE_CON_PGM_MODE_Msk            (_UINT32_(0x1) << ROT_EFUSE_CON_PGM_MODE_Pos)        /* (ROT_EFUSE_CON) eFuse Programming Mode Enable bit Mask */
-#define ROT_EFUSE_CON_PGM_MODE(value)         (ROT_EFUSE_CON_PGM_MODE_Msk & (_UINT32_(value) << ROT_EFUSE_CON_PGM_MODE_Pos)) /* Assigment of value for PGM_MODE in the ROT_EFUSE_CON register */
+#define ROT_EFUSE_CON_PGM_MODE(value)         (ROT_EFUSE_CON_PGM_MODE_Msk & (_UINT32_(value) << ROT_EFUSE_CON_PGM_MODE_Pos)) /* Assignment of value for PGM_MODE in the ROT_EFUSE_CON register */
 #define   ROT_EFUSE_CON_PGM_MODE_0_Val        _UINT32_(0x0)                                        /* (ROT_EFUSE_CON) EFuse Programming disabled  */
 #define   ROT_EFUSE_CON_PGM_MODE_1_Val        _UINT32_(0x1)                                        /* (ROT_EFUSE_CON) EFuse Programming enabled  */
-#define ROT_EFUSE_CON_PGM_MODE_0              (ROT_EFUSE_CON_PGM_MODE_0_Val << ROT_EFUSE_CON_PGM_MODE_Pos) /* (ROT_EFUSE_CON) EFuse Programming disabled Position  */
-#define ROT_EFUSE_CON_PGM_MODE_1              (ROT_EFUSE_CON_PGM_MODE_1_Val << ROT_EFUSE_CON_PGM_MODE_Pos) /* (ROT_EFUSE_CON) EFuse Programming enabled Position  */
+#define ROT_EFUSE_CON_PGM_MODE_0              (ROT_EFUSE_CON_PGM_MODE_0_Val << ROT_EFUSE_CON_PGM_MODE_Pos) /* (ROT_EFUSE_CON) EFuse Programming disabled Position */
+#define ROT_EFUSE_CON_PGM_MODE_1              (ROT_EFUSE_CON_PGM_MODE_1_Val << ROT_EFUSE_CON_PGM_MODE_Pos) /* (ROT_EFUSE_CON) EFuse Programming enabled Position */
 #define ROT_EFUSE_CON_EN_LD_Pos               _UINT32_(5)                                          /* (ROT_EFUSE_CON) eFuse Word Read Start bit for loading the fuse byte pointed by ADDR field into the holding register Position */
 #define ROT_EFUSE_CON_EN_LD_Msk               (_UINT32_(0x1) << ROT_EFUSE_CON_EN_LD_Pos)           /* (ROT_EFUSE_CON) eFuse Word Read Start bit for loading the fuse byte pointed by ADDR field into the holding register Mask */
-#define ROT_EFUSE_CON_EN_LD(value)            (ROT_EFUSE_CON_EN_LD_Msk & (_UINT32_(value) << ROT_EFUSE_CON_EN_LD_Pos)) /* Assigment of value for EN_LD in the ROT_EFUSE_CON register */
+#define ROT_EFUSE_CON_EN_LD(value)            (ROT_EFUSE_CON_EN_LD_Msk & (_UINT32_(value) << ROT_EFUSE_CON_EN_LD_Pos)) /* Assignment of value for EN_LD in the ROT_EFUSE_CON register */
 #define   ROT_EFUSE_CON_EN_LD_0_Val           _UINT32_(0x0)                                        /* (ROT_EFUSE_CON) EFuse Read operation has completed  */
 #define   ROT_EFUSE_CON_EN_LD_1_Val           _UINT32_(0x1)                                        /* (ROT_EFUSE_CON) Start eFuse Read operation for specified eFuse word as addressed in EFUSE_RWDATA register  */
-#define ROT_EFUSE_CON_EN_LD_0                 (ROT_EFUSE_CON_EN_LD_0_Val << ROT_EFUSE_CON_EN_LD_Pos) /* (ROT_EFUSE_CON) EFuse Read operation has completed Position  */
-#define ROT_EFUSE_CON_EN_LD_1                 (ROT_EFUSE_CON_EN_LD_1_Val << ROT_EFUSE_CON_EN_LD_Pos) /* (ROT_EFUSE_CON) Start eFuse Read operation for specified eFuse word as addressed in EFUSE_RWDATA register Position  */
+#define ROT_EFUSE_CON_EN_LD_0                 (ROT_EFUSE_CON_EN_LD_0_Val << ROT_EFUSE_CON_EN_LD_Pos) /* (ROT_EFUSE_CON) EFuse Read operation has completed Position */
+#define ROT_EFUSE_CON_EN_LD_1                 (ROT_EFUSE_CON_EN_LD_1_Val << ROT_EFUSE_CON_EN_LD_Pos) /* (ROT_EFUSE_CON) Start eFuse Read operation for specified eFuse word as addressed in EFUSE_RWDATA register Position */
 #define ROT_EFUSE_CON_EN_LD_ALL1_Pos          _UINT32_(6)                                          /* (ROT_EFUSE_CON) eFuse Panel Read Start bit for loading into the holding registers Position */
 #define ROT_EFUSE_CON_EN_LD_ALL1_Msk          (_UINT32_(0x1) << ROT_EFUSE_CON_EN_LD_ALL1_Pos)      /* (ROT_EFUSE_CON) eFuse Panel Read Start bit for loading into the holding registers Mask */
-#define ROT_EFUSE_CON_EN_LD_ALL1(value)       (ROT_EFUSE_CON_EN_LD_ALL1_Msk & (_UINT32_(value) << ROT_EFUSE_CON_EN_LD_ALL1_Pos)) /* Assigment of value for EN_LD_ALL1 in the ROT_EFUSE_CON register */
+#define ROT_EFUSE_CON_EN_LD_ALL1(value)       (ROT_EFUSE_CON_EN_LD_ALL1_Msk & (_UINT32_(value) << ROT_EFUSE_CON_EN_LD_ALL1_Pos)) /* Assignment of value for EN_LD_ALL1 in the ROT_EFUSE_CON register */
 #define   ROT_EFUSE_CON_EN_LD_ALL1_0_Val      _UINT32_(0x0)                                        /* (ROT_EFUSE_CON) EFuse Read operation has completed  */
 #define   ROT_EFUSE_CON_EN_LD_ALL1_1_Val      _UINT32_(0x1)                                        /* (ROT_EFUSE_CON) Start eFuse Read operation for entire eFuse panel  */
-#define ROT_EFUSE_CON_EN_LD_ALL1_0            (ROT_EFUSE_CON_EN_LD_ALL1_0_Val << ROT_EFUSE_CON_EN_LD_ALL1_Pos) /* (ROT_EFUSE_CON) EFuse Read operation has completed Position  */
-#define ROT_EFUSE_CON_EN_LD_ALL1_1            (ROT_EFUSE_CON_EN_LD_ALL1_1_Val << ROT_EFUSE_CON_EN_LD_ALL1_Pos) /* (ROT_EFUSE_CON) Start eFuse Read operation for entire eFuse panel Position  */
+#define ROT_EFUSE_CON_EN_LD_ALL1_0            (ROT_EFUSE_CON_EN_LD_ALL1_0_Val << ROT_EFUSE_CON_EN_LD_ALL1_Pos) /* (ROT_EFUSE_CON) EFuse Read operation has completed Position */
+#define ROT_EFUSE_CON_EN_LD_ALL1_1            (ROT_EFUSE_CON_EN_LD_ALL1_1_Val << ROT_EFUSE_CON_EN_LD_ALL1_Pos) /* (ROT_EFUSE_CON) Start eFuse Read operation for entire eFuse panel Position */
 #define ROT_EFUSE_CON_EN_PGM_Pos              _UINT32_(7)                                          /* (ROT_EFUSE_CON) eFuse Programming Start bit Position */
 #define ROT_EFUSE_CON_EN_PGM_Msk              (_UINT32_(0x1) << ROT_EFUSE_CON_EN_PGM_Pos)          /* (ROT_EFUSE_CON) eFuse Programming Start bit Mask */
-#define ROT_EFUSE_CON_EN_PGM(value)           (ROT_EFUSE_CON_EN_PGM_Msk & (_UINT32_(value) << ROT_EFUSE_CON_EN_PGM_Pos)) /* Assigment of value for EN_PGM in the ROT_EFUSE_CON register */
+#define ROT_EFUSE_CON_EN_PGM(value)           (ROT_EFUSE_CON_EN_PGM_Msk & (_UINT32_(value) << ROT_EFUSE_CON_EN_PGM_Pos)) /* Assignment of value for EN_PGM in the ROT_EFUSE_CON register */
 #define   ROT_EFUSE_CON_EN_PGM_0_Val          _UINT32_(0x0)                                        /* (ROT_EFUSE_CON) EFuse Programming operation has completed  */
 #define   ROT_EFUSE_CON_EN_PGM_1_Val          _UINT32_(0x1)                                        /* (ROT_EFUSE_CON) Start eFuse Programming operation  */
-#define ROT_EFUSE_CON_EN_PGM_0                (ROT_EFUSE_CON_EN_PGM_0_Val << ROT_EFUSE_CON_EN_PGM_Pos) /* (ROT_EFUSE_CON) EFuse Programming operation has completed Position  */
-#define ROT_EFUSE_CON_EN_PGM_1                (ROT_EFUSE_CON_EN_PGM_1_Val << ROT_EFUSE_CON_EN_PGM_Pos) /* (ROT_EFUSE_CON) Start eFuse Programming operation Position  */
+#define ROT_EFUSE_CON_EN_PGM_0                (ROT_EFUSE_CON_EN_PGM_0_Val << ROT_EFUSE_CON_EN_PGM_Pos) /* (ROT_EFUSE_CON) EFuse Programming operation has completed Position */
+#define ROT_EFUSE_CON_EN_PGM_1                (ROT_EFUSE_CON_EN_PGM_1_Val << ROT_EFUSE_CON_EN_PGM_Pos) /* (ROT_EFUSE_CON) Start eFuse Programming operation Position */
 #define ROT_EFUSE_CON_Msk                     _UINT32_(0x000000E3)                                 /* (ROT_EFUSE_CON) Register Mask  */
 
 #define ROT_EFUSE_CON_EN_LD_ALL_Pos           _UINT32_(6)                                          /* (ROT_EFUSE_CON Position) eFuse Panel Read Start bit for loading into the holding registers */
 #define ROT_EFUSE_CON_EN_LD_ALL_Msk           (_UINT32_(0x1) << ROT_EFUSE_CON_EN_LD_ALL_Pos)       /* (ROT_EFUSE_CON Mask) EN_LD_ALL */
 #define ROT_EFUSE_CON_EN_LD_ALL(value)        (ROT_EFUSE_CON_EN_LD_ALL_Msk & (_UINT32_(value) << ROT_EFUSE_CON_EN_LD_ALL_Pos)) 
 
-/** \brief ROT register offsets definitions */
+/* ROT register offsets definitions */
 #define ROT_SECCFG_REG_OFST            _UINT32_(0x00)      /* (ROT_SECCFG) Secure Configuration HOLDING REGISTER1,2 Offset */
 #define ROT_ANTIROLLBACKCOUNTER_REG_OFST _UINT32_(0x04)      /* (ROT_ANTIROLLBACKCOUNTER) Anti Roll back counter Offset */
 #define ROT_ANTIROLLBACKCOUNTER0_REG_OFST _UINT32_(0x04)      /* (ROT_ANTIROLLBACKCOUNTER0) Anti Roll back counter Offset */
@@ -418,26 +418,26 @@
 #define ROT_EFUSE_CON_REG_OFST         _UINT32_(0xC08)     /* (ROT_EFUSE_CON) Efuse Configuration Register2 Offset */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief ROT register API structure */
+/* ROT register API structure */
 typedef struct
 {  /* Secure Root of Trust Macro */
-  __IO  uint32_t                       ROT_SECCFG;         /**< Offset: 0x00 (R/W  32) Secure Configuration HOLDING REGISTER1,2 */
-  __IO  uint32_t                       ROT_ANTIROLLBACKCOUNTER[8]; /**< Offset: 0x04 (R/W  32) Anti Roll back counter */
-  __IO  uint32_t                       ROT_LIFECYCLECTR_BOOTKEY; /**< Offset: 0x24 (R/W  32) Life cycle counter and Secure boot key LSB bytes */
-  __IO  uint32_t                       ROT_SECUREBOOTKEY_3_46[11]; /**< Offset: 0x28 (R/W  32) Secure boot key */
-  __IO  uint32_t                       ROT_SECUREBOOTKEY_47_48_STORAGE_KEY; /**< Offset: 0x54 (R/W  32) Secure boot key, Storage Key */
-  __IO  uint32_t                       ROT_STORAGE_KEY_3_30[7]; /**< Offset: 0x58 (R/W  32) Storage Key */
-  __IO  uint32_t                       ROT_STORAGE_KEY_FFCFG; /**< Offset: 0x74 (R/W  32) Storage Key, FFCFG */
-  __IO  uint32_t                       ROT_DEVICE_ID_PATCH_CFG; /**< Offset: 0x78 (R/W  32) Device ID and Patch CFG */
-  __IO  uint32_t                       ROT_PATCH_CFG;      /**< Offset: 0x7C (R/W  32) Patch CFG */
-  __IO  uint32_t                       ROT_PATCH_CODE[60]; /**< Offset: 0x80 (R/W  32) Patch Code */
-  __IO  uint32_t                       ROT_UUID[4];        /**< Offset: 0x170 (R/W  32) Unique ID */
+  __IO  uint32_t                       ROT_SECCFG;         /* Offset: 0x00 (R/W  32) Secure Configuration HOLDING REGISTER1,2 */
+  __IO  uint32_t                       ROT_ANTIROLLBACKCOUNTER[8]; /* Offset: 0x04 (R/W  32) Anti Roll back counter */
+  __IO  uint32_t                       ROT_LIFECYCLECTR_BOOTKEY; /* Offset: 0x24 (R/W  32) Life cycle counter and Secure boot key LSB bytes */
+  __IO  uint32_t                       ROT_SECUREBOOTKEY_3_46[11]; /* Offset: 0x28 (R/W  32) Secure boot key */
+  __IO  uint32_t                       ROT_SECUREBOOTKEY_47_48_STORAGE_KEY; /* Offset: 0x54 (R/W  32) Secure boot key, Storage Key */
+  __IO  uint32_t                       ROT_STORAGE_KEY_3_30[7]; /* Offset: 0x58 (R/W  32) Storage Key */
+  __IO  uint32_t                       ROT_STORAGE_KEY_FFCFG; /* Offset: 0x74 (R/W  32) Storage Key, FFCFG */
+  __IO  uint32_t                       ROT_DEVICE_ID_PATCH_CFG; /* Offset: 0x78 (R/W  32) Device ID and Patch CFG */
+  __IO  uint32_t                       ROT_PATCH_CFG;      /* Offset: 0x7C (R/W  32) Patch CFG */
+  __IO  uint32_t                       ROT_PATCH_CODE[60]; /* Offset: 0x80 (R/W  32) Patch Code */
+  __IO  uint32_t                       ROT_UUID[4];        /* Offset: 0x170 (R/W  32) Unique ID */
   __I   uint8_t                        Reserved1[0xA80];
-  __IO  uint32_t                       ROT_SEC_BOOT;       /**< Offset: 0xC00 (R/W  32) Secure Boot Register */
-  __IO  uint32_t                       ROT_EFUSE_RWDATA;   /**< Offset: 0xC04 (R/W  32) EFuse RW Data Register */
-  __IO  uint32_t                       ROT_EFUSE_CON;      /**< Offset: 0xC08 (R/W  32) Efuse Configuration Register2 */
+  __IO  uint32_t                       ROT_SEC_BOOT;       /* Offset: 0xC00 (R/W  32) Secure Boot Register */
+  __IO  uint32_t                       ROT_EFUSE_RWDATA;   /* Offset: 0xC04 (R/W  32) EFuse RW Data Register */
+  __IO  uint32_t                       ROT_EFUSE_CON;      /* Offset: 0xC08 (R/W  32) Efuse Configuration Register2 */
 } rot_registers_t;
 
 
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _WBZ65_ROT_COMPONENT_H_ */
+#endif /* _PIC32CXBZ62_ROT_COMPONENT_H_ */

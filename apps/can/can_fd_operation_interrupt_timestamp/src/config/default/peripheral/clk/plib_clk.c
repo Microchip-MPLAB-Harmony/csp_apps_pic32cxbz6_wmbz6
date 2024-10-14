@@ -70,8 +70,7 @@
 // Section: File Scope Functions
 // *****************************************************************************
 // *****************************************************************************
-void RF_Write_Reg(uint8_t addr, uint16_t value);
-void RF_Write_Reg(uint8_t addr, uint16_t value)
+static void CLOCK_RF_Write_Reg(uint8_t addr, uint16_t value)
 {
     BLE_REGS->BLE_SPI_REG_ADDR = addr;
     BLE_REGS->BLE_SPI_WR_DATA = value;
@@ -104,17 +103,17 @@ void CLOCK_Initialize( void )
     {
         /* Nothing to do */
     }
-    RF_Write_Reg(0x27, 0x2078);
+    CLOCK_RF_Write_Reg(0x27, 0x2078);
 
     //Current Oscillator is 8MHz FRC or 16MHz POSC
     if ((CRU_REGS->CRU_OSCCON & CRU_OSCCON_COSC_Msk) != CRU_OSCCON_COSC_SPLL)
     {
         //Setup 128MHz PLL
-        RF_Write_Reg(0x2E, 0x4328);
+        CLOCK_RF_Write_Reg(0x2E, 0x4328);
 
 
         /* Configure Prefetch, Wait States by calling the ROM function whose address is available at address 0xF2D0 */
-        typedef int (*FUNC_PCHE_SETUP)(uint32_t setup);
+        typedef void (*FUNC_PCHE_SETUP)(uint32_t setup);
         (void)((FUNC_PCHE_SETUP)(*(uint32_t*)0xF2D0))((PCHE_REGS->PCHE_CHECON & (~(PCHE_CHECON_PFMWS_Msk | PCHE_CHECON_ADRWS_Msk | PCHE_CHECON_PREFEN_Msk)))
                                         | (PCHE_CHECON_PFMWS(4) | PCHE_CHECON_PREFEN(1) | PCHE_CHECON_ADRWS(1)));
     }

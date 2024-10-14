@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,9 +17,9 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_SERCOM2_INSTANCE_
-#define _WBZ65_SERCOM2_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_SERCOM2_INSTANCE_
+#define _PIC32CXBZ62_SERCOM2_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for SERCOM2 peripheral ========== */
@@ -66,4 +66,4 @@
 #define SERCOM2_INSTANCE_ID                      (96)       /* Instance index for SERCOM2 */
 #define SERCOM2_PAC_ID                           (96)       /* Index for SERCOM2 registers write protection */
 
-#endif /* _WBZ65_SERCOM2_INSTANCE_ */
+#endif /* _PIC32CXBZ62_SERCOM2_INSTANCE_ */

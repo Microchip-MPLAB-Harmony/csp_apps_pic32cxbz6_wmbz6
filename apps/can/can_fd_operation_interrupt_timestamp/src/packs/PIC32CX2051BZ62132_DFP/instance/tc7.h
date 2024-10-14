@@ -1,5 +1,5 @@
 /*
- * Instance header file for WBZ653
+ * Instance header file for PIC32CX2051BZ62132
  *
  * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
@@ -17,9 +17,9 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-07-18T20:17:01Z */
-#ifndef _WBZ65_TC7_INSTANCE_
-#define _WBZ65_TC7_INSTANCE_
+/* file generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
+#ifndef _PIC32CXBZ62_TC7_INSTANCE_
+#define _PIC32CXBZ62_TC7_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TC7 peripheral ========== */
@@ -31,4 +31,4 @@
 #define TC7_MASTER_SLAVE_MODE                    (2)        
 #define TC7_PAC_ID                               (12)       /* Index for TC7 registers write protection */
 
-#endif /* _WBZ65_TC7_INSTANCE_ */
+#endif /* _PIC32CXBZ62_TC7_INSTANCE_ */

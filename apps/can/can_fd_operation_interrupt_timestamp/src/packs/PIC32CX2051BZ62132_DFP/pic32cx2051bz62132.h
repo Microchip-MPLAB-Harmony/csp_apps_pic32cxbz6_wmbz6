@@ -17,7 +17,7 @@
  *
  */
 
-/* File generated from device description file (ATDF) version 2024-07-18T20:16:58Z */
+/* File generated from device description file (ATDF) version 2024-09-25T20:48:20Z */
 #ifndef _PIC32CX2051BZ62132_H_
 #define _PIC32CX2051BZ62132_H_
 
@@ -64,7 +64,7 @@
 #endif /* SKIP_INTEGER_LITERALS */
 
 /* ************************************************************************** */
-/* CMSIS DEFINITIONS FOR PIC32CX2051BZ62132                                 */
+/*                  CMSIS DEFINITIONS FOR PIC32CX2051BZ62132                  */
 /* ************************************************************************** */
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 /* Interrupt Number Definition */
@@ -82,7 +82,7 @@ typedef enum IRQn
   PendSV_IRQn               =  -2, /* -2  Pendable request for system service */
   SysTick_IRQn              =  -1, /* -1  System Tick Timer                   */
 
-/******  PIC32CX2051BZ62132 specific Interrupt Numbers ***********************************/
+/* ************* PIC32CX2051BZ62132 specific Interrupt Numbers ************** */
   RTC_IRQn                  =   0, /* 0   Real-Time Counter (RTC)             */
   EIC_IRQn                  =   1, /* 1   External Interrupt Controller (EIC) */
   FREQM_IRQn                =   2, /* 2   Frequency Meter (FREQM)             */
@@ -133,10 +133,10 @@ typedef enum IRQn
   CLKI_WAKEUP_NMI_IRQn      =  47, /* 47  BLE (BLE)                           */
   CVD_IRQn                  =  48, /* 48  Hardware CVD Controller Macro (CVD) */
   QEI_IRQn                  =  50, /* 50   (QEI)                              */
-  CAN0_IRQn                 =  51, /* 51  CAN0 (CAN)                          */
-  CAN1_IRQn                 =  52, /* 52  CAN1 (CAN)                          */
+  CAN0_IRQn                 =  51, /* 51  Control Area Network (CAN0)         */
+  CAN1_IRQn                 =  52, /* 52  Control Area Network (CAN1)         */
   ETH_IRQn                  =  53, /* 53  Ethernet Controller (ETH)           */
-  USBCORE_IRQn              =  54, /* 54  USBCORE (USBCORE)                   */
+  USB_IRQn                  =  54, /* 54  USB (USB)                           */
   PLL_LOCK_BOOT_IRQn        =  55, /* 55  BT ZB Subsystem (BTZBSYS)           */
   PLL_LOCK_USER_IRQn        =  56, /* 56  BT ZB Subsystem (BTZBSYS)           */
   BT_LC_IRQn                =  57, /* 57  BLE (BLE)                           */
@@ -219,10 +219,10 @@ typedef struct _DeviceVectors
   void* pfnCVD_Handler;                          /*  48 Hardware CVD Controller Macro (CVD) */
   void* pvReserved49;
   void* pfnQEI_Handler;                          /*  50  (QEI) */
-  void* pvReserved51;
-  void* pvReserved52;
+  void* pfnCAN0_Handler;                         /*  51 Control Area Network (CAN0) */
+  void* pfnCAN1_Handler;                         /*  52 Control Area Network (CAN1) */
   void* pfnETH_Handler;                          /*  53 Ethernet Controller (ETH) */
-  void* pfnUSBCORE_Handler;                      /*  54 USBCORE (USBCORE) */
+  void* pfnUSB_Handler;                          /*  54 USB (USB) */
   void* pfnPLL_LOCK_BOOT_Handler;                /*  55 BT ZB Subsystem (BTZBSYS) */
   void* pfnPLL_LOCK_USER_Handler;                /*  56 BT ZB Subsystem (BTZBSYS) */
   void* pfnBT_LC_Handler;                        /*  57 BLE (BLE) */
@@ -297,8 +297,10 @@ void ARBITER_Handler               ( void );
 void CLKI_WAKEUP_NMI_Handler       ( void );
 void CVD_Handler                   ( void );
 void QEI_Handler                   ( void );
+void CAN0_Handler                  ( void );
+void CAN1_Handler                  ( void );
 void ETH_Handler                   ( void );
-void USBCORE_Handler               ( void );
+void USB_Handler                   ( void );
 void PLL_LOCK_BOOT_Handler         ( void );
 void PLL_LOCK_USER_Handler         ( void );
 void BT_LC_Handler                 ( void );
@@ -323,7 +325,7 @@ void BT_LC_Handler                 ( void );
 #endif /* USE_CMSIS_INIT */
 
 /* ************************************************************************** */
-/*   SOFTWARE PERIPHERAL API DEFINITION FOR PIC32CX2051BZ62132                */
+/*         SOFTWARE PERIPHERAL API DEFINITIONS FOR PIC32CX2051BZ62132         */
 /* ************************************************************************** */
 #include "component/ac.h"
 #include "component/adchs.h"
@@ -365,12 +367,12 @@ void BT_LC_Handler                 ( void );
 #include "component/silex.h"
 #include "component/tc.h"
 #include "component/tcc.h"
-#include "component/usbcore.h"
+#include "component/usb.h"
 #include "component/wdt.h"
 #include "component/zigbee.h"
 
 /* ************************************************************************** */
-/*   INSTANCE DEFINITIONS FOR PIC32CX2051BZ62132 */
+/*                INSTANCE DEFINITIONS FOR PIC32CX2051BZ62132                 */
 /* ************************************************************************** */
 #include "instance/ac.h"
 #include "instance/adchs.h"
@@ -434,12 +436,12 @@ void BT_LC_Handler                 ( void );
 #include "instance/tcc0.h"
 #include "instance/tcc1.h"
 #include "instance/tcc2.h"
-#include "instance/usbcore.h"
+#include "instance/usb.h"
 #include "instance/wdt.h"
 #include "instance/zigbee.h"
 
 /* ************************************************************************** */
-/*  PERIPHERAL ID DEFINITIONS FOR PIC32CX2051BZ62132                          */
+/*              PERIPHERAL ID DEFINITIONS FOR PIC32CX2051BZ62132              */
 /* ************************************************************************** */
 #define ID_PAC           (  0) /* Instance index for PAC (PAC) */
 #define ID_FREQM         (  1) /* Instance index for FREQM (FREQM) */
@@ -479,7 +481,7 @@ void BT_LC_Handler                 ( void );
 #define ID_PERIPH_MAX    (105) /* Number of peripheral IDs */
 
 /* ************************************************************************** */
-/*   REGISTER STRUCTURE ADDRESS DEFINITIONS FOR PIC32CX2051BZ62132            */
+/*       REGISTER STRUCTURE ADDRESS DEFINITIONS FOR PIC32CX2051BZ62132        */
 /* ************************************************************************** */
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 #define AC_REGS                          ((ac_registers_t*)0x42001c00)                 /* AC Registers Address         */
@@ -544,13 +546,13 @@ void BT_LC_Handler                 ( void );
 #define TCC0_REGS                        ((tcc_registers_t*)0x40003400)                /* TCC0 Registers Address       */
 #define TCC1_REGS                        ((tcc_registers_t*)0x40003800)                /* TCC1 Registers Address       */
 #define TCC2_REGS                        ((tcc_registers_t*)0x40003c00)                /* TCC2 Registers Address       */
-#define USBCORE_REGS                     ((usbcore_registers_t*)0x44010000)            /* USBCORE Registers Address    */
+#define USB_REGS                         ((usb_registers_t*)0x44010000)                /* USB Registers Address        */
 #define WDT_REGS                         ((wdt_registers_t*)0x44000500)                /* WDT Registers Address        */
 #define ZIGBEE_REGS                      ((zigbee_registers_t*)0x41010000)             /* ZIGBEE Registers Address     */
 #endif /* (defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 /* ************************************************************************** */
-/*   BASE ADDRESS DEFINITIONS FOR PIC32CX2051BZ62132                          */
+/*              BASE ADDRESS DEFINITIONS FOR PIC32CX2051BZ62132               */
 /* ************************************************************************** */
 #define AC_BASE_ADDRESS                  _UINT32_(0x42001c00)                          /* AC Base Address */
 #define ADCHS_BASE_ADDRESS               _UINT32_(0x44001500)                          /* ADCHS Base Address */
@@ -614,17 +616,17 @@ void BT_LC_Handler                 ( void );
 #define TCC0_BASE_ADDRESS                _UINT32_(0x40003400)                          /* TCC0 Base Address */
 #define TCC1_BASE_ADDRESS                _UINT32_(0x40003800)                          /* TCC1 Base Address */
 #define TCC2_BASE_ADDRESS                _UINT32_(0x40003c00)                          /* TCC2 Base Address */
-#define USBCORE_BASE_ADDRESS             _UINT32_(0x44010000)                          /* USBCORE Base Address */
+#define USB_BASE_ADDRESS                 _UINT32_(0x44010000)                          /* USB Base Address */
 #define WDT_BASE_ADDRESS                 _UINT32_(0x44000500)                          /* WDT Base Address */
 #define ZIGBEE_BASE_ADDRESS              _UINT32_(0x41010000)                          /* ZIGBEE Base Address */
 
 /* ************************************************************************** */
-/*   PIO DEFINITIONS FOR PIC32CX2051BZ62132                                   */
+/*                   PIO DEFINITIONS FOR PIC32CX2051BZ62132                   */
 /* ************************************************************************** */
 #include "pio/pic32cx2051bz62132.h"
 
 /* ************************************************************************** */
-/*   MEMORY MAPPING DEFINITIONS FOR PIC32CX2051BZ62132                        */
+/*             MEMORY MAPPING DEFINITIONS FOR PIC32CX2051BZ62132              */
 /* ************************************************************************** */
 #define ROM_SECURE_BOOT_ROM_SIZE       _UINT32_(0x00010000)    /*   64kB Memory segment type: rom */
 #define ROM_SECURE_BOOT_PATCH_SIZE     _UINT32_(0x00000800)    /*    2kB Memory segment type: rom */
@@ -676,16 +678,16 @@ void BT_LC_Handler                 ( void );
 #define EFUSE_ADDR                     _UINT32_(0x00000000)    /* EFUSE base address (type: fuses)*/
 
 /* ************************************************************************** */
-/*   DEVICE SIGNATURES FOR PIC32CX2051BZ62132                                 */
+/*                  DEVICE SIGNATURES FOR PIC32CX2051BZ62132                  */
 /* ************************************************************************** */
 #define CHIP_DSU_DID                   _UINT32_(0X0001A800)
 
 /* ************************************************************************** */
-/*   ELECTRICAL DEFINITIONS FOR PIC32CX2051BZ62132                            */
+/*               ELECTRICAL DEFINITIONS FOR PIC32CX2051BZ62132                */
 /* ************************************************************************** */
 
 /* ************************************************************************** */
-/* Event Generator IDs for C32CX2051BZ62132 */
+/*                  Event Generator IDs for C32CX2051BZ62132                  */
 /* ************************************************************************** */
 #define EVENT_ID_GEN_RTC_PER_0                            1 /* ID for RTC event generator PER_0 */
 #define EVENT_ID_GEN_RTC_PER_1                            2 /* ID for RTC event generator PER_1 */
@@ -775,7 +777,7 @@ void BT_LC_Handler                 ( void );
 #define EVENT_ID_GEN_QEI0                                89 /* ID for QEI event generator QEI0 */
 
 /* ************************************************************************** */
-/*  Event User IDs for C32CX2051BZ62132 */
+/*                    Event User IDs for C32CX2051BZ62132                     */
 /* ************************************************************************** */
 #define EVENT_ID_USER_RTC_TAMPER                          0 /* ID for RTC event user TAMPER */
 #define EVENT_ID_USER_DMAC_CH_0                           1 /* ID for DMAC event user CH_0 */
