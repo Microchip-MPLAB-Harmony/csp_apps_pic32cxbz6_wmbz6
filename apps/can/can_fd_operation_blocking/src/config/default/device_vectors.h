@@ -136,7 +136,7 @@ typedef struct H3DeviceVectorsTag
   pfn_handler_t pfnCAN0_Handler;                    /* 51 CAN0 */
   pfn_handler_t pfnCAN1_Handler;                    /* 52 CAN1 */
   pfn_handler_t pfnETH_Handler;                     /* 53 Ethernet */
-  pfn_handler_t pfnUSBCORE_Handler;                 /* 54 USB */
+  pfn_handler_t pfnUSB_Handler;                     /* 54 USB */
   pfn_handler_t pfnPLL_LOCK_BOOT_Handler;           /* 55 Boot PLL Lock  */
   pfn_handler_t pfnPLL_LOCK_USER_Handler;           /* 56 User PLL Lock */
   pfn_handler_t pfnBT_LC_Handler;                   /* 57 Bluetooth LC */

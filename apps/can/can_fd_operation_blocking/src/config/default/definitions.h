@@ -66,10 +66,10 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "PIC32CX2051BZ62132"
+#define DEVICE_NAME			 "WBZ653"
 #define DEVICE_ARCH			 "CORTEX-M4"
 #define DEVICE_FAMILY		 "PIC32CX_BZ6"
-#define DEVICE_SERIES		 "PIC32CXBZ62"
+#define DEVICE_SERIES		 "WBZ65"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 128000000
