@@ -1,4 +1,4 @@
-<config configName="default" projectName="wbz653_curiosity" configVersion="1.1" device="PIC32CX2051BZ62132" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
+<config configName="default" projectName="wbz653_curiosity" configVersion="1.1" device="WBZ653" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -31,7 +31,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.2"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.3"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -61,7 +61,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_DATA_BITRATE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;2000&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;2612&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -72,7 +72,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_DATA_ERRORRATE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0.000&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;30.612&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -82,7 +82,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CALCULATED_NOMINAL_BITRATE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_NOMINAL_BITRATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;500&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -91,7 +93,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CALCULATED_NOMINAL_ERRORRATE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_NOMINAL_ERRORRATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0.000&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -7161,14 +7165,8 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DATA_SAMPLE_POINT"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;DATA_SAMPLE_POINT&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;readOnly&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;96.875&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;75.0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;75.0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -7179,7 +7177,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;DATA_TIME_QUANTA_PERIOD&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;15.625&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;7.813&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -7189,13 +7187,8 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DBTP_DBRP"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBTP_DBRP&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;readOnly&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;1&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -7217,7 +7210,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBTP_DTSEG1&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;23&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;47&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -7228,7 +7221,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBTP_DTSEG2&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;8&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;16&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -7248,7 +7241,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBTP_TOTAL_TIME_QUANTA&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;32&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;49&quot;/&gt;
     &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
@@ -7327,7 +7320,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBTP_NBRP"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBTP_NBRP&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -7336,7 +7331,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBTP_NSJW"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBTP_NSJW&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;32&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -7345,7 +7342,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBTP_NTSEG1"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBTP_NTSEG1&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;95&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -7354,7 +7353,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBTP_NTSEG2"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBTP_NTSEG2&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;32&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -7372,7 +7373,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBTP_TOTAL_TIME_QUANTA"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBTP_TOTAL_TIME_QUANTA&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;128&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -7399,7 +7402,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NOMINAL_TIME_QUANTA_PERIOD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
   &lt;can1 dnOrder=&quot;0&quot; id=&quot;NOMINAL_TIME_QUANTA_PERIOD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;15.625&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/can1&gt;
 &lt;/can1&gt;
 </value>
@@ -7725,19 +7730,19 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;240&quot; canvasWidth=&quot;486&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;218&quot; canvasWidth=&quot;637&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
       &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
     &lt;/PowerProfiles&gt;
     &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;can1&quot; x=&quot;310&quot; y=&quot;60&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;cmsis&quot; x=&quot;170&quot; y=&quot;60&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;core&quot; x=&quot;400&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;dfp&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;can1&quot; x=&quot;201&quot; y=&quot;112&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;cmsis&quot; x=&quot;500&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;core&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;dfp&quot; x=&quot;280&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;evsys&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;sercom0&quot; x=&quot;134&quot; y=&quot;128&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;stdio&quot; x=&quot;342&quot; y=&quot;134&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;sercom0&quot; x=&quot;399&quot; y=&quot;106&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;stdio&quot; x=&quot;555&quot; y=&quot;120&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -7749,9 +7754,9 @@
          <value>__ROOTVIEW</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_10_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_12_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_10_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_12_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7760,9 +7765,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_11_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_19_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_11_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_19_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7771,9 +7776,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_123_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_20_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_123_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_20_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7782,9 +7787,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_14_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_21_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_14_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_21_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7793,20 +7798,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_16_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_23_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_16_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_18_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_18_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_23_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7859,6 +7853,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_28_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_28_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;CAN1_RX&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_28_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_28_MODE&quot;&gt;
@@ -7881,9 +7886,53 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_30_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_31_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_30_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_31_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_32_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_32_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_34_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_34_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_35_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_35_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_37_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_37_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7895,6 +7944,28 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_38_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_38_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_39_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_39_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_40_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_40_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7925,9 +7996,20 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_48_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_44_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_48_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_44_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_47_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_47_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7941,6 +8023,17 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_49_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_4_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_4_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;CAN1_TX&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -7980,9 +8073,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_7_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_54_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_7_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_54_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -7991,97 +8084,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_84_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_5_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_84_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_85_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_85_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_89_FUNCTION_TYPE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_89_FUNCTION_TYPE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;CAN1_TX&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_89_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_89_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_8_FUNCTION_TYPE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_8_FUNCTION_TYPE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;CAN1_RX&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_8_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_8_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_93_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_93_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_97_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_97_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_9_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_9_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_5_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -8436,9 +8441,100 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_INPUT_FUNCTION_1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_INPUT_FUNCTION_1&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;44&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_INPUT_PIN_0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_INPUT_PIN_0&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;KeyValuePairList dnOrder=&quot;0&quot; id=&quot;pairs&quot;&gt;
+        &lt;Pairs dnOrder=&quot;0&quot;&gt;
+          &lt;Pair description=&quot;RPD4&quot; dnOrder=&quot;0&quot; key=&quot;RPD4&quot; value=&quot;13&quot;/&gt;
+          &lt;Pair description=&quot;RPD5&quot; dnOrder=&quot;1&quot; key=&quot;RPD5&quot; value=&quot;4&quot;/&gt;
+          &lt;Pair description=&quot;RPA10&quot; dnOrder=&quot;2&quot; key=&quot;RPA10&quot; value=&quot;2&quot;/&gt;
+          &lt;Pair description=&quot;RPD2&quot; dnOrder=&quot;3&quot; key=&quot;RPD2&quot; value=&quot;10&quot;/&gt;
+          &lt;Pair description=&quot;RPA11&quot; dnOrder=&quot;4&quot; key=&quot;RPA11&quot; value=&quot;25&quot;/&gt;
+          &lt;Pair description=&quot;RPD3&quot; dnOrder=&quot;5&quot; key=&quot;RPD3&quot; value=&quot;6&quot;/&gt;
+          &lt;Pair description=&quot;RPA12&quot; dnOrder=&quot;6&quot; key=&quot;RPA12&quot; value=&quot;24&quot;/&gt;
+          &lt;Pair description=&quot;RPC10&quot; dnOrder=&quot;7&quot; key=&quot;RPC10&quot; value=&quot;12&quot;/&gt;
+          &lt;Pair description=&quot;RPD0&quot; dnOrder=&quot;8&quot; key=&quot;RPD0&quot; value=&quot;17&quot;/&gt;
+          &lt;Pair description=&quot;RPA13&quot; dnOrder=&quot;9&quot; key=&quot;RPA13&quot; value=&quot;19&quot;/&gt;
+          &lt;Pair description=&quot;RPC11&quot; dnOrder=&quot;10&quot; key=&quot;RPC11&quot; value=&quot;13&quot;/&gt;
+          &lt;Pair description=&quot;RPD1&quot; dnOrder=&quot;11&quot; key=&quot;RPD1&quot; value=&quot;18&quot;/&gt;
+          &lt;Pair description=&quot;RPA14&quot; dnOrder=&quot;12&quot; key=&quot;RPA14&quot; value=&quot;3&quot;/&gt;
+          &lt;Pair description=&quot;RPA15&quot; dnOrder=&quot;13&quot; key=&quot;RPA15&quot; value=&quot;14&quot;/&gt;
+          &lt;Pair description=&quot;RPD6&quot; dnOrder=&quot;14&quot; key=&quot;RPD6&quot; value=&quot;13&quot;/&gt;
+          &lt;Pair description=&quot;RPD7&quot; dnOrder=&quot;15&quot; key=&quot;RPD7&quot; value=&quot;11&quot;/&gt;
+          &lt;Pair description=&quot;RPC1&quot; dnOrder=&quot;16&quot; key=&quot;RPC1&quot; value=&quot;12&quot;/&gt;
+          &lt;Pair description=&quot;RPC0&quot; dnOrder=&quot;17&quot; key=&quot;RPC0&quot; value=&quot;12&quot;/&gt;
+          &lt;Pair description=&quot;RPC9&quot; dnOrder=&quot;18&quot; key=&quot;RPC9&quot; value=&quot;5&quot;/&gt;
+          &lt;Pair description=&quot;RPC7&quot; dnOrder=&quot;19&quot; key=&quot;RPC7&quot; value=&quot;10&quot;/&gt;
+          &lt;Pair description=&quot;RPC8&quot; dnOrder=&quot;20&quot; key=&quot;RPC8&quot; value=&quot;9&quot;/&gt;
+          &lt;Pair description=&quot;RPB15&quot; dnOrder=&quot;21&quot; key=&quot;RPB15&quot; value=&quot;16&quot;/&gt;
+          &lt;Pair description=&quot;RPB2&quot; dnOrder=&quot;22&quot; key=&quot;RPB2&quot; value=&quot;20&quot;/&gt;
+          &lt;Pair description=&quot;RPB3&quot; dnOrder=&quot;23&quot; key=&quot;RPB3&quot; value=&quot;4&quot;/&gt;
+          &lt;Pair description=&quot;RPB0&quot; dnOrder=&quot;24&quot; key=&quot;RPB0&quot; value=&quot;8&quot;/&gt;
+          &lt;Pair description=&quot;RPB1&quot; dnOrder=&quot;25&quot; key=&quot;RPB1&quot; value=&quot;20&quot;/&gt;
+          &lt;Pair description=&quot;RPB10&quot; dnOrder=&quot;26&quot; key=&quot;RPB10&quot; value=&quot;4&quot;/&gt;
+          &lt;Pair description=&quot;RPB11&quot; dnOrder=&quot;27&quot; key=&quot;RPB11&quot; value=&quot;16&quot;/&gt;
+          &lt;Pair description=&quot;RPB12&quot; dnOrder=&quot;28&quot; key=&quot;RPB12&quot; value=&quot;17&quot;/&gt;
+          &lt;Pair description=&quot;OFF&quot; dnOrder=&quot;29&quot; key=&quot;OFF&quot; value=&quot;0&quot;/&gt;
+          &lt;Pair description=&quot;RPB13&quot; dnOrder=&quot;30&quot; key=&quot;RPB13&quot; value=&quot;6&quot;/&gt;
+          &lt;Pair description=&quot;RPB14&quot; dnOrder=&quot;31&quot; key=&quot;RPB14&quot; value=&quot;15&quot;/&gt;
+          &lt;Pair description=&quot;RPB8&quot; dnOrder=&quot;32&quot; key=&quot;RPB8&quot; value=&quot;10&quot;/&gt;
+          &lt;Pair description=&quot;RPB9&quot; dnOrder=&quot;33&quot; key=&quot;RPB9&quot; value=&quot;3&quot;/&gt;
+          &lt;Pair description=&quot;RPB6&quot; dnOrder=&quot;34&quot; key=&quot;RPB6&quot; value=&quot;9&quot;/&gt;
+          &lt;Pair description=&quot;RPB7&quot; dnOrder=&quot;35&quot; key=&quot;RPB7&quot; value=&quot;15&quot;/&gt;
+          &lt;Pair description=&quot;RPB4&quot; dnOrder=&quot;36&quot; key=&quot;RPB4&quot; value=&quot;3&quot;/&gt;
+          &lt;Pair description=&quot;RPB5&quot; dnOrder=&quot;37&quot; key=&quot;RPB5&quot; value=&quot;2&quot;/&gt;
+          &lt;Pair description=&quot;RPA1&quot; dnOrder=&quot;38&quot; key=&quot;RPA1&quot; value=&quot;7&quot;/&gt;
+          &lt;Pair description=&quot;RPE5&quot; dnOrder=&quot;39&quot; key=&quot;RPE5&quot; value=&quot;5&quot;/&gt;
+          &lt;Pair description=&quot;RPA2&quot; dnOrder=&quot;40&quot; key=&quot;RPA2&quot; value=&quot;24&quot;/&gt;
+          &lt;Pair description=&quot;RPE6&quot; dnOrder=&quot;41&quot; key=&quot;RPE6&quot; value=&quot;14&quot;/&gt;
+          &lt;Pair description=&quot;RPE3&quot; dnOrder=&quot;42&quot; key=&quot;RPE3&quot; value=&quot;7&quot;/&gt;
+          &lt;Pair description=&quot;RPA0&quot; dnOrder=&quot;43&quot; key=&quot;RPA0&quot; value=&quot;8&quot;/&gt;
+          &lt;Pair description=&quot;RPE4&quot; dnOrder=&quot;44&quot; key=&quot;RPE4&quot; value=&quot;6&quot;/&gt;
+          &lt;Pair description=&quot;RPE1&quot; dnOrder=&quot;45&quot; key=&quot;RPE1&quot; value=&quot;12&quot;/&gt;
+          &lt;Pair description=&quot;RPE2&quot; dnOrder=&quot;46&quot; key=&quot;RPE2&quot; value=&quot;11&quot;/&gt;
+          &lt;Pair description=&quot;RPE0&quot; dnOrder=&quot;47&quot; key=&quot;RPE0&quot; value=&quot;14&quot;/&gt;
+          &lt;Pair description=&quot;RPA9&quot; dnOrder=&quot;48&quot; key=&quot;RPA9&quot; value=&quot;2&quot;/&gt;
+          &lt;Pair description=&quot;RPA7&quot; dnOrder=&quot;49&quot; key=&quot;RPA7&quot; value=&quot;8&quot;/&gt;
+          &lt;Pair description=&quot;RPA8&quot; dnOrder=&quot;50&quot; key=&quot;RPA8&quot; value=&quot;23&quot;/&gt;
+          &lt;Pair description=&quot;RPA5&quot; dnOrder=&quot;51&quot; key=&quot;RPA5&quot; value=&quot;1&quot;/&gt;
+          &lt;Pair description=&quot;RPA6&quot; dnOrder=&quot;52&quot; key=&quot;RPA6&quot; value=&quot;7&quot;/&gt;
+          &lt;Pair description=&quot;RPA3&quot; dnOrder=&quot;53&quot; key=&quot;RPA3&quot; value=&quot;6&quot;/&gt;
+          &lt;Pair description=&quot;RPA4&quot; dnOrder=&quot;54&quot; key=&quot;RPA4&quot; value=&quot;1&quot;/&gt;
+        &lt;/Pairs&gt;
+      &lt;/KeyValuePairList&gt;
+      &lt;Boolean dnOrder=&quot;1&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;40&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_INPUT_PIN_1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_INPUT_PIN_1&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
       &lt;KeyValuePairList dnOrder=&quot;0&quot; id=&quot;pairs&quot;&gt;
         &lt;Pairs dnOrder=&quot;0&quot;&gt;
@@ -8546,6 +8642,17 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="USE_PPS_INPUT_0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;USE_PPS_INPUT_0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="USE_PPS_INPUT_1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;USE_PPS_INPUT_1&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
     &lt;/Values&gt;
@@ -9794,16 +9901,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>..\src\config\default\PIC32CX2051BZ62132.ld</file>
-         <hash>9b462586eb18564e91d1423b5f6d9ecda1c44eea4a2deb47d8a9348ab8f7aaa2</hash>
+         <file>..\src\config\default\WBZ653.ld</file>
+         <hash>feba8b6fc7294e7a2bb5fb4e2bf39bd14eae5b091b1effc6ed8dd5668f11a147</hash>
       </entry>
       <entry>
          <file>..\src\config\default\definitions.h</file>
-         <hash>81f87ae776507e5610069360bee48d728a00c2b8d98b0d76d072d356ef606fa7</hash>
+         <hash>b303347b084d861cb5d581ef086d9abe3a2712aa0a0d096ed52cc81623a6c72a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\device.h</file>
-         <hash>10b197a39bac91ce950a58d7994ba7c89d27efd468a8a4b20cbd6708324b32eb</hash>
+         <hash>fc86b20d2a979af1c174c01e4e97e9b38bf52750d06371d67f205ea0788a7be0</hash>
       </entry>
       <entry>
          <file>..\src\config\default\device_cache.h</file>
@@ -9835,7 +9942,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\can\plib_can1.c</file>
-         <hash>37cec3af064bf99ae2fa494a2c0e06bface481eebf3211ced274e511db27284d</hash>
+         <hash>b6fbacf9a95fc254cec202c763256ee53c1f0c88a211d3c9115167176e2f36d5</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\can\plib_can1.h</file>
@@ -9847,7 +9954,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.c</file>
-         <hash>c0557bc4cc213d0a2a4bb8b14db3d82e4f0fd4622c70c3cb059871a363ba51ab</hash>
+         <hash>ad656920408d01f836eef636fc4ca1a3ee8d36844fda0da0f9306f8d39ec8d05</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.h</file>
@@ -9871,7 +9978,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\gpio\plib_gpio.c</file>
-         <hash>54c7afe90d68b5db31ca330dff23881492a5ea378a3e27cf422b0402045e24c8</hash>
+         <hash>58cfaad550d365aba5b9880972a13a96c2e93bd5c585fe65aebd871d9e5d5110</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\gpio\plib_gpio.h</file>
@@ -9954,444 +10061,444 @@
          <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\ac.h</file>
-         <hash>7dc0397389a3f7cc160a8cae7e196a1c0579e490ef439ebe20c346c065a3e398</hash>
+         <file>..\src\packs\WBZ653_DFP\component\ac.h</file>
+         <hash>05cc84c3f868deeab89b4e34e6fdb81e659a0532829e428165e3fa5e8d1630cc</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\adchs.h</file>
-         <hash>08bca3b07f3bd4d612d19f050772189b326b0131bd27c49153c681549f562425</hash>
+         <file>..\src\packs\WBZ653_DFP\component\adchs.h</file>
+         <hash>dbacbc8cbc8957120d231491bb333c78e20cc6fc71eba978a5cf3fcb9e0d7187</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\arb.h</file>
-         <hash>cbe27d2957fef4318d7b026be930f572729a3702d32c178fe2da7d8ec1656da2</hash>
+         <file>..\src\packs\WBZ653_DFP\component\arb.h</file>
+         <hash>17a177ca0d8339e57a566c935d39a5c5f330cc730f6430379c0515dd280f465f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\ble.h</file>
-         <hash>3bca8dd3621443a59985372ab27fc6736b11d21a38f89b7b70b91ca085256d3f</hash>
+         <file>..\src\packs\WBZ653_DFP\component\ble.h</file>
+         <hash>86b0bc6e67df77489b93ecfa91fb0e52ae17406602e47d932af21e1f7f4c43bf</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\btzbsys.h</file>
-         <hash>878011d08022bb70b34fff155401d37a7db910f09ab33be9ef1770552591523f</hash>
+         <file>..\src\packs\WBZ653_DFP\component\btzbsys.h</file>
+         <hash>ba784121c3174e09ac8712fa9a80826b57e9515b18b97acaaef36af069daafbb</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\can.h</file>
-         <hash>c467e116678a259c84a099d4e6dee7d4ec02f43a5dd5c5391ee68233fac4949d</hash>
+         <file>..\src\packs\WBZ653_DFP\component\can.h</file>
+         <hash>d3d4eea6080ec5a880c22c4d792cdeb148ef71619d4f4871c636df9c71372d14</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\ccl.h</file>
-         <hash>4a1c13954055bedc4d855215f66d008357a4f773b179d7b7094a521be1a6d8aa</hash>
+         <file>..\src\packs\WBZ653_DFP\component\ccl.h</file>
+         <hash>bb75937e3e7b9296b7b321c7b99e9004ea2bc51d238bf7147b08f81ec3ada2a7</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\cfg.h</file>
-         <hash>f82c3fd5347740d32ae4f1eaa8d41b2c7d8271e171d05f01c393cf72ca61e49c</hash>
+         <file>..\src\packs\WBZ653_DFP\component\cfg.h</file>
+         <hash>12d53877d44bf27d1ec070a06acb8fcdcadfa9f5d1086dfbb4862811764b964d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\cmcc.h</file>
-         <hash>7c71bff108c18d9587599be69d743b2e094594c5dcef08e5ff5297164c658146</hash>
+         <file>..\src\packs\WBZ653_DFP\component\cmcc.h</file>
+         <hash>6c208d89795c3ee4b388ea8d90dae4536f7921092ff038c8dce7d36e77f2eb29</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\cru.h</file>
-         <hash>d4cba8edbc8720f299de561455f868dd47361016f089f488e42c88dc0ff2c449</hash>
+         <file>..\src\packs\WBZ653_DFP\component\cru.h</file>
+         <hash>bb36bc4593da3854c73d5e4dad140caee351f475e8930326014c03767800bd43</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\cvd.h</file>
-         <hash>8dee3ead154a728d7f9fd6ba9131f1cd8d511d9a467672f98ca8d98f75169e47</hash>
+         <file>..\src\packs\WBZ653_DFP\component\cvd.h</file>
+         <hash>f2e0b6020d7373ab90d2ba0d58b184918b70517b9d7ae3db724b8e51c90c3dbe</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\dac_ctrl.h</file>
-         <hash>29b9eca970497c025657ac4586336aa77e8e8be2547eba5b2ec8e16393764994</hash>
+         <file>..\src\packs\WBZ653_DFP\component\dac_ctrl.h</file>
+         <hash>2dadac5f64dc0ee597414e23589fdc9b392068b1c31ea61937da17d5637ee759</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\dmac.h</file>
-         <hash>5beeeae081e646a041a07747cd3a12496af040a051fbb1b640563b30b483dd28</hash>
+         <file>..\src\packs\WBZ653_DFP\component\dmac.h</file>
+         <hash>8b5366443844935d839a90510974ec44659220b145c5211f7687be6ee2d9d397</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\dmt.h</file>
-         <hash>12f7d9415601b6afa051fb8c7a6b967b9f06e92eddcfcdcea9b486829e4e9740</hash>
+         <file>..\src\packs\WBZ653_DFP\component\dmt.h</file>
+         <hash>1a1a195707d8ce09c925d8849a89c99273a879126b502f37506be58a14ae7cf6</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\dscon.h</file>
-         <hash>0d4392cb9ea807b562aea34146ca88fe485bb83e48923f9bf470bb5b277d6bbe</hash>
+         <file>..\src\packs\WBZ653_DFP\component\dscon.h</file>
+         <hash>6807be7c96365f6790c046f551710008b7be223421d4b3f54d9d3925629597ab</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\dsu.h</file>
-         <hash>34aba20b18262d81c00f58828c81c242338283e49eda5ed7c2ec13b01e01da82</hash>
+         <file>..\src\packs\WBZ653_DFP\component\dsu.h</file>
+         <hash>236a52e16d48fa7a52c25be1db5c8637eab065c3bd9a46e51a5ca36ee4042cdc</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\efuse.h</file>
-         <hash>9330d9a9f60c95b25eb75800faaa2f1cba538ad78061bb0a36a86bbb30db68bc</hash>
+         <file>..\src\packs\WBZ653_DFP\component\efuse.h</file>
+         <hash>6bfaf5cf269df68b328fdd611dadac04050e13ac2ec9f2cc653b164d5c5885d2</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\eic.h</file>
-         <hash>5e1fdeccd5948a15cd2c88f3a8d1624f35683960bc6cb3e3b2f339986a16bc91</hash>
+         <file>..\src\packs\WBZ653_DFP\component\eic.h</file>
+         <hash>0953474ec98f9122104ac3eb5b47069eeb93b3a89ea43cb1bb76ae83a7d0d4f0</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\eth.h</file>
-         <hash>96c572b828e136a0d0c2fd5814a1134be1171e67d69e19e0afbfa8567642274a</hash>
+         <file>..\src\packs\WBZ653_DFP\component\eth.h</file>
+         <hash>adcaa2a571fb15349441c84372a380f8d2e8ba60e6530c46a835a7c50accd64d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\evsys.h</file>
-         <hash>a276bb5f88f3b2c65c93a047345426f1dde804545ef9a880772c4e0edc63fbd1</hash>
+         <file>..\src\packs\WBZ653_DFP\component\evsys.h</file>
+         <hash>a4a026ae05b913d416b925b9b1c2385974c9372897694652e0c77faebf0b3cba</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\freqm.h</file>
-         <hash>d175e9f062dfe46de8a9d9d0151e49a534ae3df97a6639b88dc39fd4a225a50f</hash>
+         <file>..\src\packs\WBZ653_DFP\component\freqm.h</file>
+         <hash>584b05ccec38ae13d6787ef69998d219acabde0a6b4300006f46865f7641cc9f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\fuses.h</file>
-         <hash>c01541b44f48023b4a84c30b8acc2a6c5bde019ab08e6412fc70f54c40590f7f</hash>
+         <file>..\src\packs\WBZ653_DFP\component\fuses.h</file>
+         <hash>670524bb3f6720969e3c9d28bd908840a8124e36640cc40b2578811030573392</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\gpio.h</file>
-         <hash>835ac1fc2ae7b0bc301df0bcda9efc09c0d6d6e937eac59518c2d5b2ff05ccdb</hash>
+         <file>..\src\packs\WBZ653_DFP\component\gpio.h</file>
+         <hash>16a02fb79f8cfc5dc1599ac08e6d6525309d5c78fe307f71f07c9cc5833868bf</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\hmatrix2top.h</file>
-         <hash>f7b8c04fb49520f3effd78a2a9026e6261befc8dc55ab5ac6948a67fae7b43ef</hash>
+         <file>..\src\packs\WBZ653_DFP\component\hmatrix2top.h</file>
+         <hash>2f29edb8ebf84c377e770f75bea6c7eef2494ed79a57f32e90f9d3d152960ba9</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\nvm.h</file>
-         <hash>85106131879635b854531aab8ac4f76c16585b635ba7a7af54e58ad445e9172d</hash>
+         <file>..\src\packs\WBZ653_DFP\component\nvm.h</file>
+         <hash>554896ef096da8303d86f61d570d77cd188a708105ed473147bb19b3f704cd3f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\pac.h</file>
-         <hash>039ff2cd8ea24671711cb204a8f3c7b8232943186d9e94208805c3036da0f0f4</hash>
+         <file>..\src\packs\WBZ653_DFP\component\pac.h</file>
+         <hash>41f9763c2b8204e947722d633e08c5e8e0a5c32a4b05cb1ffa9996f9dc4d62ac</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\pche.h</file>
-         <hash>a39a4b5ff280b7f1a9d7ac5ba39d9fc87224447e49393ef7649c527a95b9c939</hash>
+         <file>..\src\packs\WBZ653_DFP\component\pche.h</file>
+         <hash>acc3a83a403e17b624ffef0fd15e30c5e8d6b5f6004a623d12fab9dc84379122</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\pfw.h</file>
-         <hash>3bc8c372856f64fb775cf3f2388ebe9a2ee12158abec9dddba173e2407bcc486</hash>
+         <file>..\src\packs\WBZ653_DFP\component\pfw.h</file>
+         <hash>3c92205fbb3c2a4e0d639de309ac39f7e4fbb6ecebeef9c0c932a0a7ce652461</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\pmu.h</file>
-         <hash>5e46ce3bc8d25c61b1163366c5be21e8d09fcc626c5d0f339f1c48d05aa42433</hash>
+         <file>..\src\packs\WBZ653_DFP\component\pmu.h</file>
+         <hash>f5b109d131e10b0b0223d88402eba67608c9b5b80bda30799959f1d885fab879</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\pps.h</file>
-         <hash>883d9bf1303cd8a1215a6cb2f200e23ef3301a9dda94cdbf604feb1763c2b5f8</hash>
+         <file>..\src\packs\WBZ653_DFP\component\pps.h</file>
+         <hash>b97ac4bd6bced321ed66665052ba0a82b40e735f4a2f69c90be6cf3a901fbc1c</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\qei.h</file>
-         <hash>a1a3e30286c54986572c31d0ec4e8a352077500c20d527504b71ba4e314a76a3</hash>
+         <file>..\src\packs\WBZ653_DFP\component\qei.h</file>
+         <hash>9d076342975bd9e0258e8188e2c33c169b0c04c157329304e148967ce5bdcec1</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\qspi.h</file>
-         <hash>ba6478dc77e5b776fa8d1a17ebfb9fd5602ecf9f085d8e6af7ad42fc7adac097</hash>
+         <file>..\src\packs\WBZ653_DFP\component\qspi.h</file>
+         <hash>35cbe8470459a140281ade77d0153594611ec7bde471b8628e16cf51cedf1282</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\ramecc.h</file>
-         <hash>7434698f94c65643ac5eabba08e4f259bdfe1d3353ef0cb7c3602ee3ffadfd58</hash>
+         <file>..\src\packs\WBZ653_DFP\component\ramecc.h</file>
+         <hash>4d9255f3f4a3acf896c323d44cb639bf4896c277a0cd3e84f367c37a61b40bd3</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\rcon.h</file>
-         <hash>0e36422351ab42c659675f32a9173e95838478efc950f5ba5e7ace4829ba690d</hash>
+         <file>..\src\packs\WBZ653_DFP\component\rcon.h</file>
+         <hash>e59b0c130c96a6ff7cc22692135ad3573611e9d0e74484f16a03eea4567b8e90</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\rot.h</file>
-         <hash>68d5c02c0a4da787bd49544ef7cc85020bde98cc34a7acf5c0655af64bfd95e4</hash>
+         <file>..\src\packs\WBZ653_DFP\component\rot.h</file>
+         <hash>91d682672e556842cae28d8b070017dead14cd8b8c709ebb186174af72c315be</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\rtc.h</file>
-         <hash>be2da511f8956e98116656a8a56a4071ccedffc335f9f3ab48ae2dc2fc09ba64</hash>
+         <file>..\src\packs\WBZ653_DFP\component\rtc.h</file>
+         <hash>20b40b7b946e99102f5435256433a9b4824b5d52c8d2c79cab0345862f69cc2a</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\sercom.h</file>
-         <hash>bfb2840d4e80724cb69fb3f71c4eb7df38c6a4b567f6910400ebba2d52b54a00</hash>
+         <file>..\src\packs\WBZ653_DFP\component\sercom.h</file>
+         <hash>c94332cf595c7274e3694d386370f19f83c62c8550732e638e1aaf56fa949474</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\silex.h</file>
-         <hash>279d26df077005ed33ae13a7fd4d1a86ad9e2bfa0123cfcc78bc263a083bbf57</hash>
+         <file>..\src\packs\WBZ653_DFP\component\silex.h</file>
+         <hash>7ae8b8f391957c38e33f543590958fe106664087d27e106c78f7285b4932e69e</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\tc.h</file>
-         <hash>c249654320c159301817c1e45d2ac1500fdf323ec5de7718a142adeb3582c247</hash>
+         <file>..\src\packs\WBZ653_DFP\component\tc.h</file>
+         <hash>3498c458d489c01b229551dec01897ade5e6c1274fecef455ceb4c92b4c5f227</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\tcc.h</file>
-         <hash>1c1b7e8eabdd9e26ea383299e52c571c41ccf41b64fee9c559e588daa804c0b9</hash>
+         <file>..\src\packs\WBZ653_DFP\component\tcc.h</file>
+         <hash>28bb69f21e4e98a5b7e2b8bd02467bbb63bab1142f3164407c2e275361e41280</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\usb.h</file>
-         <hash>1963cbfafd4673cf1404f0473564009c1923d40a8efb03539b2bd22bac6349c9</hash>
+         <file>..\src\packs\WBZ653_DFP\component\usb.h</file>
+         <hash>e318f50eda7f2d029b59c32da41ffd48039de5d23186cd0125287f9e61186961</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\wdt.h</file>
-         <hash>3a9fc07260b0a5dd18e3d32263fe2cd67c7c806bf7f750e5e666e8ab17d3ee62</hash>
+         <file>..\src\packs\WBZ653_DFP\component\wdt.h</file>
+         <hash>652004c41e8327850bd3f30dd10da7cbb823e36dd76cf62aeccfa84c60320e03</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\component\zigbee.h</file>
-         <hash>f61cc3bb6a5557db45b3210ec3421464b0a5cbd9ab140f44f35892890b58ae9f</hash>
+         <file>..\src\packs\WBZ653_DFP\component\zigbee.h</file>
+         <hash>23f14eb397a4cb7c9f8c17f62f26077a627742bf9e241b3dcd350392ad26bc4a</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\ac.h</file>
-         <hash>7b7fc5d113f152d7343ade35311a2be4f8d14f6d42afff3dc6ae012b2afe220c</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\ac.h</file>
+         <hash>32c930b018d9b9bb709546b92f801ff45e5c4a5fbb5adb526924e9d1f496bafd</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\adchs.h</file>
-         <hash>2847e289e685616682424c21c9c93d82e25f228454a7780e10140d6c01716df4</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\adchs.h</file>
+         <hash>ce338ab99a8b6c39a2ddb01537a335f05b7446e2880102ec9e239398497716b5</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\arb.h</file>
-         <hash>ee9a8a3f2fd14f1775345a646e41c7dbe80c7ad2c36013d0a51eff9d3e36d07d</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\arb.h</file>
+         <hash>8c7d84316f3e375ee129d28206b837cba02a568fa0959d0d5ebe3dc4b82093f4</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\ble.h</file>
-         <hash>070458059869e3641af40bc007892f2d7f99ed88d26069f0e93f0fcee74b226b</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\ble.h</file>
+         <hash>a8c98600c7d328663a6222cb0083ce7950058167388392acab4335a50fb7860f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\btzbsys.h</file>
-         <hash>9c0a320b884b4dd79eb84382f10e02cb4161969ce4b6e08a362346f17f39fb86</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\btzbsys.h</file>
+         <hash>d36fe06cb4e9eba1546d24716f9363f7b61125cd8a2775a7d0c102770b09fe43</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\can0.h</file>
-         <hash>f6cf121f64dc5d8cebcf4bda6ddc9f785062bd36e196313db932021b4a75c2ac</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\can0.h</file>
+         <hash>421a3e6f4814b1969c078708e111c5068d19d3dbad3c1ccebd4195aca6205bee</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\can1.h</file>
-         <hash>0d73a5c2b3d3126f3469f6e333812c607b6e9afeeff6ecbae7c3053e60b26f64</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\can1.h</file>
+         <hash>7f13f0e2228a7a76b5aabe4fc29de179f5f4a0526c6979bccdd1657e2e26e53e</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\ccl.h</file>
-         <hash>57472d84ac80ec489f6d838c53b4b6d6127813fbe33322bd2e86b1e50b7256b1</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\ccl.h</file>
+         <hash>8f88ffbd6291bfd433bc55fb64b2e986dbbace4fce5e1f36f55182e15608f305</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\cfg.h</file>
-         <hash>36637713abaec5a91a88e14e860960db15f1c4ff34ffd6a986198c5338d580c1</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\cfg.h</file>
+         <hash>544c249f7a14c8b0661b9ccaa732abe7f269ec0156032f4b8f9710e0425c0597</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\cmcc.h</file>
-         <hash>5a300523daab95cd6fc77e8b6025f34dab6028be4d2b88d4b38fd8f3d8cce290</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\cmcc.h</file>
+         <hash>63e5de6dcd6fec621479b51f692360389cf7d2a762826794330c1c106117f435</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\cru.h</file>
-         <hash>3e168f345bfe537285ebc3a770e1e46e3f67594a0ef21e0211c672dc0a6edba6</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\cru.h</file>
+         <hash>bcb0d5d6b4899fce4b7d7067bc4f074df71ae0172b56aa54694628c3b0d7c4ae</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\cvd.h</file>
-         <hash>a64a7ae52c510356a2a324e4685d5229c81342003b8792690433ad53cc03c2bd</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\cvd.h</file>
+         <hash>705c699e2dd47397af83acb4c3ca04c21a71aa5a7f174bef66a8355ae4fec4fa</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\dac_ctrl.h</file>
-         <hash>d4c02c38da532919e674a2fe53dd139c344edcb3d6f61ec818b74d7e5614025f</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\dac_ctrl.h</file>
+         <hash>3462164ba636be4ffb0beb6f33681d6d128ec9bcaf2ae6ddf2f269dfe3043e4f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\dmac.h</file>
-         <hash>58039aff78a8fdbd6e9b194808fc51523c685b360949b66f99d69d3f2108f728</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\dmac.h</file>
+         <hash>23eb27fff6637c0b5570094fe6fda4c7b1b9d42994c1ff5a813a0dbe1627ef0b</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\dmt.h</file>
-         <hash>1cc6b58a6cb07edf835f29fba4f47ab029a0a90953ce33013d30f2e1dbc8d034</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\dmt.h</file>
+         <hash>421ee832ff170ba8d8ebe015ffe2c63a0728c9fdfda95b49bd941984593c457a</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\dscon.h</file>
-         <hash>38fdee54328b07c73c3ee614aa134108fc7c6d58440ecdfc861b93ecbe7653db</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\dscon.h</file>
+         <hash>4aea0e8a4c24c85814e63afe1acb93a8306af6b819c1ef094aa497b210b45977</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\dsu.h</file>
-         <hash>c1dceb38da868f5824c7ca44ca7801219eb72df07f0b29745b5995e4e35d021d</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\dsu.h</file>
+         <hash>be783b2529f02d7cec3b77a641986b922e94c3f7a4fd780768f5e84ca561dde7</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\efuse.h</file>
-         <hash>8d16a5aa60461b5e6ec27fdd3d6bee7ec3efed1f6c3a1ae2f6758b5ded375f30</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\efuse.h</file>
+         <hash>e7eb44b1020e7dd2b1e9b0351f9889a929781a05162a992bc76c620a08546661</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\eic.h</file>
-         <hash>251e2bab580b4097b6d2322d67f015e46373ff4186b6ee6cb0c17f6264f18059</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\eic.h</file>
+         <hash>ff450767328ca584e587b35ba93fdb61480c406d2e721985587b99f0b4e5d51a</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\eth.h</file>
-         <hash>65b71b8d18afdb2766e794756c241a804d3fc7a5d40555a61b4240989debf5dc</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\eth.h</file>
+         <hash>baa16525556cc7f766a597c40d47af4c821a6c2d822946973e47aab3abd43d29</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\evsys.h</file>
-         <hash>f29e6421753ef86e7a9d21ac3f9ae01ce9af57a1a2738689e6fb49ae4478b010</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\evsys.h</file>
+         <hash>105d6486b1bd171d38e8703ddaafdff7125bfcb47ee53c87e6474a5a97538566</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\freqm.h</file>
-         <hash>0b745cff62740554d0facb901e1236c999ddd86dee1ee15de724b42bb46bde86</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\freqm.h</file>
+         <hash>27d60e3c090f00d4be679e03093250433baf422e3549a6f7da68566a8c18a024</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\fuses.h</file>
-         <hash>fdf1ef3ff293addc0c4c0fc7e21c0a0591ba115590e674f3bdd08c2df544f289</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\fuses.h</file>
+         <hash>76ddddcfe8637969728fa6087ca609bf4a0fbed2351c942beaa3ac049a9cd0d3</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\gpioa.h</file>
-         <hash>2c29c2d93d1146b5c579c8b159c11470f954d49afe720b664d3d9381ca454b25</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\gpioa.h</file>
+         <hash>addc79ef1b6b27b31f5707d3e16c4db44ca1c3bef825dd56ed562deb8bba553b</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\gpiob.h</file>
-         <hash>151ffa282fc49b933bfa8e81cfe33e33a8ac0126a4d8c2cf68864df4650b57b0</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\gpiob.h</file>
+         <hash>84a34dbb69bd8d2ca0551b1eef07f5c669a324800192cd204a8561e57a569fa7</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\gpioc.h</file>
-         <hash>41b7aeea09771824aef99cd00c4914ac5d9e87f8105ffda2d25ff2d3a9194427</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\gpioc.h</file>
+         <hash>e2c14f3ab53fad3b6bf8cc878b338f80da68f625b45df8cc3722a07698187e83</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\gpiod.h</file>
-         <hash>a54808046554a3736f02fa8bad690972d4056825ea35aec54e3cc9c533a809e6</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\gpiod.h</file>
+         <hash>58376a43d9e67403387c1a843150f223ba5389f34814354a7d58ce4aaaa5cb0d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\gpioe.h</file>
-         <hash>f06f502ed362fec97056ed4da648c65785389edfed70add9911ef77c010cfd0e</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\gpioe.h</file>
+         <hash>d201f7ae55c35213caf68c6b1b22e5345f70e65f2a646555ae4b6a0fbe2cbffb</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\hmatrix2top.h</file>
-         <hash>22c34ff13ae950b0dd5383e5aebed0be045e0cb378497918a742eb25a83ce7cc</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\hmatrix2top.h</file>
+         <hash>81d3b4a6944b2c10ae92c424a33513431329311beb15134551a014c3c3785ade</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\nvm.h</file>
-         <hash>af3e923b2c3c272373bc4b34cb85d6738f1338c56270db16ad7196940e383d27</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\nvm.h</file>
+         <hash>b310fb06b092f9cfb8ae71251e921168bc16451e3024b1f4ef5f272e9aa5733e</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\pac.h</file>
-         <hash>147ca83f048961dcf93cea2d9e711fa1881d264908f0a44c955add299261a7ee</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\pac.h</file>
+         <hash>b0f6ae2ea4d8390882a587f7f9ce65f3775e775065a406fcdaeb1959d6527f71</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\pche.h</file>
-         <hash>4e519726d92fb009b164f54105ae4752a7e193a11cf7d632b00d7b7f95fcb426</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\pche.h</file>
+         <hash>9581f1a11bbf5120963eefebb04fad0c66e1c71c7602aa98a43ebbe3012e48ca</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\pfw.h</file>
-         <hash>04ab2fd69574649c10a05879ec6b9153e527d594a1b1624bcd1f40cf70e0dcd4</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\pfw.h</file>
+         <hash>7f12f0eb809e8fd6c47030a92de222dd97decce7a502090a1e15a97fdd79583e</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\pmu.h</file>
-         <hash>df29080c01654e09d76cce2bd59af1ffe6b684a23f1a7c1d7f930ccb5e92c0cb</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\pmu.h</file>
+         <hash>271a727b1a0e25b9455930db18712906cf3379a53230cb4a1622a1a8f10adc1b</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\pps.h</file>
-         <hash>c1304be7b082515f6201c11286decec8060b71a413d100bd3681c3a9ab189fff</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\pps.h</file>
+         <hash>13c43a32c687425eb04efdce528ddeb2b29e67d937ebc08b5cff4d4243c61148</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\qei.h</file>
-         <hash>3d015ebafad9c2997a0bc99ffcacf236614a8b37da299eaf733001fe8be2e981</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\qei.h</file>
+         <hash>72fb855d52471fc08cc8ab47ed1ce5f3109e7059becde4844ebbb1b35b80a3ed</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\qspi.h</file>
-         <hash>353616ce071a07fdec93149a7b02e7e761a5f07a3c803f54111cc8cfdf48d64c</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\qspi.h</file>
+         <hash>5aea90d77eaaae243f1e1c59b51a923518a94e8a7bec3a92bfdf0e7096488992</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\ramecc.h</file>
-         <hash>00500ec3235cba2115c45ebbec6a594441138cf1fdd583531703d5aa83e2ff1b</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\ramecc.h</file>
+         <hash>44f4dd940a6cf5c9e770b749b053fb8400ff25b792e30da4321f03a5622b1d61</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\rcon.h</file>
-         <hash>e0251a949c858969a584de318a5d76f95486324cfd6944c43a0422b4fa89676a</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\rcon.h</file>
+         <hash>23f18f029ffd5f8c4446717958f8a71563518960ece96a1dc646869f939bda93</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\rot.h</file>
-         <hash>8434a69c5eedc0d5827650be6d5f900a62854304a5f9c93bb641f59457e6dba1</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\rot.h</file>
+         <hash>659dba2c8b3ab5a391cb330bc1ef2818e612e298f3fef55148c0266b7404d96c</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\rtc.h</file>
-         <hash>a9c42b436070e4d268d007519bcd96c8d0aeba6aa34d715f8d78db93a7512c14</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\rtc.h</file>
+         <hash>400f4cd61c3ace920603ee361fd043f5d130d90fdeade712551517af215a390f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\sercom0.h</file>
-         <hash>144db9da724c82c80ba660793f820518c5119cba1d0351f1d09c66d2f6094543</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\sercom0.h</file>
+         <hash>fabfdbbff0177125cea884a8dc8d05ebc09e487b65ce070c37d66c5a9aaebad9</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\sercom1.h</file>
-         <hash>db22c97442b42e2c705f296455348a38aee0b8194ec31d0139a3fe14d5091021</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\sercom1.h</file>
+         <hash>8b11b53e49014d3c76d2d1059dadd7352dad6573e4f99db9ea19125e4edd37aa</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\sercom2.h</file>
-         <hash>ca4251a5ba16899af7a08a23adfc1dcf73081d2aa981ac5e149c32a7a2a5fb31</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\sercom2.h</file>
+         <hash>5b89a29f9b3cc90cf429992ab6de4e3afdeb8864402792bbf7f04802ff5f17af</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\sercom3.h</file>
-         <hash>a116e6733a41c6308b317bb62bb91bd8b84d38a0034a28d71af141c6fed5bc26</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\sercom3.h</file>
+         <hash>8887d281936126ac933fcf6070c29098f264a8c89746cc611afa65415a26a39d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\sercom4.h</file>
-         <hash>ad60830ade6d8cfb1bd06f8cc0adf20a796055304b915ed582ccac885d599f2e</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\sercom4.h</file>
+         <hash>60ca0a8e69896accd66b29f8408d66f9efd0fe683480350c3cb18aab1e2764fa</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\sercom5.h</file>
-         <hash>d7d20a51b2850a1599b33002534c9f6eaa75eec2301f2f0c1fdd7e8c94d6850a</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\sercom5.h</file>
+         <hash>f47488e38df4c1d278bed1f3e52b5dc4dcaf310f67fb1f52caccec00932e00b9</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\sercom6.h</file>
-         <hash>1c2d753d75d24632e0aaa929eb4cac0f72630bdbf8c71a9b01d2a98b7f329c27</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\sercom6.h</file>
+         <hash>072dda96c476970f63643cc12de06bb4dcba77ae712fa07b8b599761e1d78eae</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\silex.h</file>
-         <hash>09e262c1ddec314881a2b9b3526951f24064b1fd3ada4f4215ba50028c4cb362</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\silex.h</file>
+         <hash>765220d844f419cc1b83f9fefcdba3861f0b5b6aaac24f18269344f1c5b9f928</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc0.h</file>
-         <hash>f96fa49a226caa0e103f94f0c4dd5a830c667047c70c768c29cd7d54a703d6cf</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc0.h</file>
+         <hash>3d7b3c2c2080e81d6c0a81b4d0574f34c2eb680fe59dc09758627795f79711b1</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc1.h</file>
-         <hash>e35f6565fd081c59a03ed4f8f71ba6f4a1e9571dc612e6b59dc1b0ffb7553743</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc1.h</file>
+         <hash>9346db8dfb0b875381ed108603e6f287caacc70d9d950bbc20433a1051bf6c77</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc2.h</file>
-         <hash>47b5426410e3f276c78202afd2868948dc9da599c570866780f1f7f199c8f3a9</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc2.h</file>
+         <hash>86a54bc8f843e5e6bfb92793d9ddabc9c03f19d0c28b92c6a7ae353fe9ecca21</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc3.h</file>
-         <hash>e312bd53e0e6d9412d9be297de1148692d4f00f451d56bd6a776c5d4cf800aed</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc3.h</file>
+         <hash>4352b78bdd19384080f821f9cd465c1da8b00b779d57d0d4f223915d34353538</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc4.h</file>
-         <hash>f2dfee6c22c77b324e364b5a02c8a012c3c73f8bfe0ef59aec4bf98b24c58e0d</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc4.h</file>
+         <hash>e8aad826e3e7fd07ca18d09a0dc596192634d0c82168c7471b5b2c3b14e24227</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc5.h</file>
-         <hash>a4812e7d1dfbf8ff7eb87a1794d355de4356a0ddd166f2f31cb7017dda95ab7d</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc5.h</file>
+         <hash>2f806e786bdcf57863dead1711573e6a202374a85d89d3207d67f8dc567a8da0</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc6.h</file>
-         <hash>809b071ee3fd9bdb325b651f587560568f76cfeea7024f3c66a1c844ae6519e6</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc6.h</file>
+         <hash>d533747d54cd6cb2db6ecb6e39b088937e3f39e90e29dff844ede58af1acf03e</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc7.h</file>
-         <hash>f25a729671565c57af8b769e8d6548f1a402cc8b58d50d6f9d0054c8fa96078e</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc7.h</file>
+         <hash>2621810b7c39813ab864b78d2f15fbe8dea0b804bc66501bc69cfce36f6e8bdb</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc8.h</file>
-         <hash>06ff8253342ee0d79a5e80368c660f582a79fc922906e990b6c4780886428652</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc8.h</file>
+         <hash>6539bca33459fde490c65277b7164caa2fa81d81450605cb249577da3dfd48e7</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tc9.h</file>
-         <hash>f58cb6a4d9f1ec831bc55c001f9f704b69f900d3632a45985df0f65275a74dbf</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tc9.h</file>
+         <hash>91ea5fd8357ae8a6150298bf515fc369fa01d56aa5d56581e56a5b0ce31c3c91</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tcc0.h</file>
-         <hash>3cd9d99c7702f2554be4231161b98734af58658602e58eb2855ccf6deef21f34</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tcc0.h</file>
+         <hash>6e9f23549ebda5be692743e5852b42b9e0d15da4b155faea4f8ec905190362b1</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tcc1.h</file>
-         <hash>61e0fe459f37b8fdb0c30d34e7295870b3cd8947d5490db53c498642d2445337</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tcc1.h</file>
+         <hash>386f5ba529f3c4407498d7bd3dd3bede257b1e868eca6232affa02a13c8be62f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\tcc2.h</file>
-         <hash>efc5295565b6daa13755141abedd81ea7abc1ee6e41f831dc7754835d0585f63</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\tcc2.h</file>
+         <hash>ef93692cf33269db50b4712f3fc387eec4855f3133ff9ac47f382e451b8f46c0</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\usb.h</file>
-         <hash>8afd4503171e908c19f0976351d33e7bf2365fb399b7cea03ef9bfef165d04cf</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\usb.h</file>
+         <hash>23e314dee84ead3938b53d51539244b5268627080c9d5a3be50c42ba1ba6d16a</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\wdt.h</file>
-         <hash>007c12a1d71507db65ba5d9c868773aca81c779c3778d0c9ce1b34012f3c2cf7</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\wdt.h</file>
+         <hash>d9f49bf7200ff80cfffeff854e66ddbddee4258f262cf314ac37a96a3cade14c</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\instance\zigbee.h</file>
-         <hash>5b4537a8f8902fbdab00acffcb2b6c7330c4bfaf1c560cc2ef33affbf79b0b08</hash>
+         <file>..\src\packs\WBZ653_DFP\instance\zigbee.h</file>
+         <hash>2f0c8c4584cf98cf5cb4f7234a56bc41182aa3e4accd3dbea6d0f1fdcf2d6659</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\pic32cx2051bz62132.h</file>
-         <hash>84824108c5ccf20847585f9faa2cc3cffd023de96f9331c469a0eea667dab365</hash>
+         <file>..\src\packs\WBZ653_DFP\pio\wbz653.h</file>
+         <hash>83cb08b1a58eae985347629098db8b71320e577c98a7954026d3beb373f78f9f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CX2051BZ62132_DFP\pio\pic32cx2051bz62132.h</file>
-         <hash>ee4d391e973c3ec8318effba2daecedaf0448de3f6f2bd76cd496ebe3753f55e</hash>
+         <file>..\src\packs\WBZ653_DFP\wbz653.h</file>
+         <hash>a4765ee5fbfb88cb5287a6cf923404edd63222fbc09a53a138928f14975936dd</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

@@ -58,6 +58,8 @@
 */
 void GPIO_Initialize ( void )
 {
+    /* Disable JTAG since at least one of its pins is configured for Non-JTAG function */
+    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_JTAGEN_Msk;
     /* PORTA Initialization */
     /* PORTB Initialization */
     GPIOB_REGS->GPIO_ANSELCLR = 0xcU; /* Digital Mode Enable */
@@ -67,6 +69,7 @@ void GPIO_Initialize ( void )
 
 
     /* PPS Input Remapping */
+    PPS_REGS->PPS_QD2R = 24U;
     PPS_REGS->PPS_CAN1RXR = 1U;
 
     /* PPS Output Remapping */
