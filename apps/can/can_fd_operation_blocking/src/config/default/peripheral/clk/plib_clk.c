@@ -70,13 +70,15 @@
 // Section: File Scope Functions
 // *****************************************************************************
 // *****************************************************************************
-void RF_Write_Reg(uint8_t addr, uint16_t value);
-void RF_Write_Reg(uint8_t addr, uint16_t value)
+static void CLOCK_RF_Write_Reg(uint8_t addr, uint16_t value)
 {
     BLE_REGS->BLE_SPI_REG_ADDR = addr;
     BLE_REGS->BLE_SPI_WR_DATA = value;
-    BLE_REGS->BLE_RFPWRMGMT |= 0x00100000;
-    while (BLE_REGS->BLE_RFPWRMGMT & 0x00100000);
+    BLE_REGS->BLE_RFPWRMGMT |= 0x00100000U;
+    while ((BLE_REGS->BLE_RFPWRMGMT & 0x00100000U) != 0U)
+    {
+        /* Do nothing */
+    }
 }
 // *****************************************************************************
 /* Function:
@@ -104,24 +106,23 @@ void CLOCK_Initialize( void )
     {
         /* Nothing to do */
     }
-    RF_Write_Reg(0x27, 0x2078);
+    CLOCK_RF_Write_Reg(0x27U, 0x2078U);
 
     //Current Oscillator is 8MHz FRC or 16MHz POSC
     if ((CRU_REGS->CRU_OSCCON & CRU_OSCCON_COSC_Msk) != CRU_OSCCON_COSC_SPLL)
     {
         //Setup 128MHz PLL
-        RF_Write_Reg(0x2E, 0x4328);
+        CLOCK_RF_Write_Reg(0x2EU, 0x4328U);
 
-
+        /* MISRAC 2012 deviation block start */
+        /* MISRA C-2012 Rule 11.1 deviated 1 time. Deviation record ID -  H3_MISRAC_2012_R_11_1_DR_1 */
         /* Configure Prefetch, Wait States by calling the ROM function whose address is available at address 0xF2D0 */
-        typedef int (*FUNC_PCHE_SETUP)(uint32_t setup);
+        typedef void (*FUNC_PCHE_SETUP)(uint32_t setup);
         (void)((FUNC_PCHE_SETUP)(*(uint32_t*)0xF2D0))((PCHE_REGS->PCHE_CHECON & (~(PCHE_CHECON_PFMWS_Msk | PCHE_CHECON_ADRWS_Msk | PCHE_CHECON_PREFEN_Msk)))
                                         | (PCHE_CHECON_PFMWS(4) | PCHE_CHECON_PREFEN(1) | PCHE_CHECON_ADRWS(1)));
     }
     //programming 4ms delay -  programming subsys_xtal_ready_delay
     //check xtal spec for delay required
-    BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG1 = ((BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG1 & ~BTZBSYS_SUBSYS_CNTRL_REG1_subsys_xtal_ready_delay_Msk)
-                                                | ((0x01UL) << BTZBSYS_SUBSYS_CNTRL_REG1_subsys_xtal_ready_delay_Pos));
     //wait for crystal ready
     while((BTZBSYS_REGS->BTZBSYS_SUBSYS_STATUS_REG1 & BTZBSYS_SUBSYS_STATUS_REG1_xtal_ready_out_Msk) != BTZBSYS_SUBSYS_STATUS_REG1_xtal_ready_out_Msk)
     {
@@ -130,16 +131,16 @@ void CLOCK_Initialize( void )
     CFG_REGS->CFG_SYSKEY = 0x00000000; // Write junk to lock it if it is already unlocked
     CFG_REGS->CFG_SYSKEY = 0xAA996655;
     CFG_REGS->CFG_SYSKEY = 0x556699AA;
-    CRU_REGS->CRU_OSCCON = 0x200;// switch to XO
+    CRU_REGS->CRU_OSCCON = 0x200U;// switch to XO
 
     //Enable oscillator switch from COSC to NOSC
     CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_OSWEN_Msk;
 
     //wait for successful clock change before continuing
-	while ((CRU_REGS->CRU_OSCCON & CRU_OSCCON_OSWEN_Msk) != 0U)
+    while ((CRU_REGS->CRU_OSCCON & CRU_OSCCON_OSWEN_Msk) != 0U)
     {
         /* Nothing to do */
-    }	
+    }
 
     //set PLL_disable
      BLE_REGS->BLE_DPLL_RG2 |= 0x02U;
@@ -166,7 +167,7 @@ void CLOCK_Initialize( void )
     /* SPLLPOSTDIV1 = 1 */
     /* SPLLPOSTDIV2 = 0x1 */
     /* SPLL_BYP     = 0x3     */
-    CRU_REGS->CRU_SPLLCON = 0xc0010008U;
+    CRU_REGS->CRU_SPLLCON = 0xc0010108U;
 
     //wait for PLL Lock
     while((BTZBSYS_REGS -> BTZBSYS_SUBSYS_STATUS_REG1 & 0x03U) != 0x03U)
@@ -193,7 +194,7 @@ void CLOCK_Initialize( void )
     }
     /* Peripheral Bus 3 is by default enabled, set its divisor */
     /* PBDIV = 10 */
-    CRU_REGS->CRU_PB3DIV = CRU_PB3DIV_PBDIVON_Msk | CRU_PB3DIV_PBDIV(9);
+    CRU_REGS->CRU_PB3DIV = CRU_PB3DIV_PBDIVON_Msk | CRU_PB3DIV_PBDIV(9U);
 
 
 
@@ -204,24 +205,24 @@ void CLOCK_Initialize( void )
     /* RSLP = false */
     /* SIDL = false */
     /* RODIV = 0 */
-    CRU_REGS->CRU_REFO1CON = 0x201;
+    CRU_REGS->CRU_REFO1CON = 0x201U;
 
     /* Enable oscillator (ON bit) */
-    CRU_REGS->CRU_REFO1CONSET = 0x00008000;
+    CRU_REGS->CRU_REFO1CONSET = 0x00008000U;
 
 
     /* Peripheral Clock Generators */
-    CFG_REGS->CFG_CFGPCLKGEN1 = 0x9000;
-    CFG_REGS->CFG_CFGPCLKGEN2 = 0x0;
-    CFG_REGS->CFG_CFGPCLKGEN3 = 0x0;
-    CFG_REGS->CFG_CFGPCLKGEN4 = 0x90000000;
+    CFG_REGS->CFG_CFGPCLKGEN1 = 0x9000U;
+    CFG_REGS->CFG_CFGPCLKGEN2 = 0x0U;
+    CFG_REGS->CFG_CFGPCLKGEN3 = 0x0U;
+    CFG_REGS->CFG_CFGPCLKGEN4 = 0x90000000U;
 
     /* Peripheral Module Disable Configuration */
 
 
-    CFG_REGS->CFG_PMD1 = 0x200007e0;
-    CFG_REGS->CFG_PMD2 = 0x0;
-    CFG_REGS->CFG_PMD3 = 0x773fffe;
+    CFG_REGS->CFG_PMD1 = 0x200007e0U;
+    CFG_REGS->CFG_PMD2 = 0x0U;
+    CFG_REGS->CFG_PMD3 = 0x773fffeU;
 
 
     // Change src_clk source to PLL CLK
