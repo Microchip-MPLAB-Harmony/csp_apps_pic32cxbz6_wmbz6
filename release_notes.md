@@ -8,7 +8,7 @@ nav_order: 99
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
-## Harmony 3 peripheral library application examples for PIC32CX-BZ6 and WBZ653 family  v3.0.0
+## Harmony 3 peripheral library application examples for PIC32CX-BZ6 and WBZ653 family  v3.0.0-E1
 
 ### Development kit and demo application support
 
