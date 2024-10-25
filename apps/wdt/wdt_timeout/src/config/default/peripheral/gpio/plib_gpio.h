@@ -61,14 +61,6 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/*** Macros for LED_RED pin ***/
-#define LED_RED_Set()               (GPIOC_REGS->GPIO_LATSET = (1U<<7U))
-#define LED_RED_Clear()             (GPIOC_REGS->GPIO_LATCLR = (1U<<7U))
-#define LED_RED_Toggle()            (GPIOC_REGS->GPIO_LATINV= (1U<<7U))
-#define LED_RED_Get()               ((GPIOC_REGS->GPIO_PORT >> 7U) & 0x1U)
-#define LED_RED_OutputEnable()      (GPIOC_REGS->GPIO_TRISCLR = (1U<<7U))
-#define LED_RED_InputEnable()       (GPIOC_REGS->GPIO_TRISSET = (1U<<7U))
-#define LED_RED_PIN                  GPIO_PIN_RC7
 /*** Macros for SWITCH pin ***/
 #define SWITCH_Set()               (GPIOE_REGS->GPIO_LATSET = (1U<<3U))
 #define SWITCH_Clear()             (GPIOE_REGS->GPIO_LATCLR = (1U<<3U))
@@ -79,6 +71,14 @@
 #define SWITCH_InterruptEnable()   (GPIOE_REGS->GPIO_CNENSET = (1U<<3U))
 #define SWITCH_InterruptDisable()  (GPIOE_REGS->GPIO_CNENCLR = (1U<<3U))
 #define SWITCH_PIN                  GPIO_PIN_RE3
+/*** Macros for LED_RED pin ***/
+#define LED_RED_Set()               (GPIOC_REGS->GPIO_LATSET = (1U<<7U))
+#define LED_RED_Clear()             (GPIOC_REGS->GPIO_LATCLR = (1U<<7U))
+#define LED_RED_Toggle()            (GPIOC_REGS->GPIO_LATINV= (1U<<7U))
+#define LED_RED_Get()               ((GPIOC_REGS->GPIO_PORT >> 7U) & 0x1U)
+#define LED_RED_OutputEnable()      (GPIOC_REGS->GPIO_TRISCLR = (1U<<7U))
+#define LED_RED_InputEnable()       (GPIOC_REGS->GPIO_TRISSET = (1U<<7U))
+#define LED_RED_PIN                  GPIO_PIN_RC7
 
 
 // *****************************************************************************

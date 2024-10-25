@@ -63,6 +63,8 @@ static uint8_t portNumCb[5 + 1] = { 0, 0, 0, 0, 0, 1, };
 */
 void GPIO_Initialize ( void )
 {
+    /* Disable JTAG since at least one of its pins is configured for Non-JTAG function */
+    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_JTAGEN_Msk;
     /* PORTA Initialization */
     /* PORTB Initialization */
     GPIOB_REGS->GPIO_ANSELCLR = 0x8U; /* Digital Mode Enable */
