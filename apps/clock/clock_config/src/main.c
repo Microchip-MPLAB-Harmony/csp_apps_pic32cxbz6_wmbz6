@@ -39,10 +39,15 @@ int main ( void )
     /* Initialize all modules */
     SYS_Initialize ( NULL );
 
+    
+    /* Start system tick timer */
+    SYSTICK_TimerStart();
+    
     while ( true )
     {
-        /* Maintain state machines of all polled MPLAB Harmony modules. */
-        SYS_Tasks ( );
+        /* Toggle LED after every 1s */
+        LED_RED_Toggle();
+        SYSTICK_DelayMs(1000);
     }
 
     /* Execution should not come here during normal operation */

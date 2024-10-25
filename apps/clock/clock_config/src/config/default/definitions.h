@@ -52,6 +52,7 @@
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/nvic/plib_nvic.h"
+#include "peripheral/systick/plib_systick.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 
 // DOM-IGNORE-BEGIN
@@ -63,13 +64,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "WBZ653"
-#define DEVICE_ARCH			 "CORTEX-M4"
-#define DEVICE_FAMILY		 "PIC32CX_BZ6"
-#define DEVICE_SERIES		 "WBZ65"
+#define DEVICE_NAME          "WBZ653"
+#define DEVICE_ARCH          "CORTEX-M4"
+#define DEVICE_FAMILY        "PIC32CX_BZ6"
+#define DEVICE_SERIES        "WBZ65"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 128000000
+#define CPU_CLOCK_FREQUENCY 128000000U
 
 // *****************************************************************************
 // *****************************************************************************
