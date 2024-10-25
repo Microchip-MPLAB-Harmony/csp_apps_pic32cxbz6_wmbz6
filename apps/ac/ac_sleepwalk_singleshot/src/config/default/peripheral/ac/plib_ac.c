@@ -52,6 +52,7 @@
 
 
 
+
 typedef struct
 {
     uint8_t int_flags;
@@ -78,6 +79,9 @@ void AC_Initialize(void)
     {
         /* Wait for Synchronization */
     }
+
+
+
 
 
 
@@ -121,6 +125,8 @@ void AC_SwapInputs( AC_CHANNEL channel_id )
 {
     /* Disable comparator before swapping */
     AC_REGS->AC_COMPCTRL[channel_id] &= ~AC_COMPCTRL_ENABLE_Msk;
+
+
     /* Check Synchronization to ensure that the comparator is disabled */
     while((AC_REGS->AC_SYNCBUSY != 0U))
     {
@@ -129,6 +135,7 @@ void AC_SwapInputs( AC_CHANNEL channel_id )
     /* Swap inputs of the given comparator */
     AC_REGS->AC_COMPCTRL[channel_id] |= AC_COMPCTRL_SWAP_Msk;
     AC_REGS->AC_COMPCTRL[channel_id] |= AC_COMPCTRL_ENABLE_Msk;
+
     while((AC_REGS->AC_SYNCBUSY != 0U))
     {
         /* Wait for Synchronization */
@@ -139,6 +146,7 @@ void AC_ChannelSelect( AC_CHANNEL channel_id , AC_POSINPUT positiveInput, AC_NEG
 {
     /* Disable comparator before swapping */
     AC_REGS->AC_COMPCTRL[channel_id] &= ~AC_COMPCTRL_ENABLE_Msk;
+
     /* Check Synchronization to ensure that the comparator is disabled */
     while((AC_REGS->AC_SYNCBUSY != 0U))
     {
@@ -149,6 +157,8 @@ void AC_ChannelSelect( AC_CHANNEL channel_id , AC_POSINPUT positiveInput, AC_NEG
 
     /* Enable comparator channel */
     AC_REGS->AC_COMPCTRL[channel_id] |= AC_COMPCTRL_ENABLE_Msk;
+
+
     while((AC_REGS->AC_SYNCBUSY != 0U))
     {
         /* Wait for Synchronization */

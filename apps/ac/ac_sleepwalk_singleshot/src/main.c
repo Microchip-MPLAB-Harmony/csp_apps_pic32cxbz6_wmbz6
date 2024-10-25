@@ -93,7 +93,7 @@ int main ( void )
 
     while ( true )
     {
-        //POWER_LowPowerModeEnter(LOW_POWER_SLEEP_MODE);
+        POWER_LowPowerModeEnter(LOW_POWER_SLEEP_MODE);
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
         if(ac_comparison_done)
@@ -108,11 +108,7 @@ int main ( void )
             {
                 printf("\r\nInput voltage is below detect level\r\n");
             }
-        }
-        
-        //GPIO_RB3_Toggle();
-        //GPIO_RB5_Toggle();
-        //GPIO_RB6_Toggle();
+        }                
     }
 
     /* Execution should not come here during normal operation */

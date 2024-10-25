@@ -57,6 +57,7 @@
 // Section: Power Implementation
 // *****************************************************************************
 // *****************************************************************************
+#define Power_Down_Control_register_ll (*((volatile uint32_t *)(0x41012430)))
 
 void POWER_Initialize( void )
 {
@@ -86,11 +87,31 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
                         break;
         case LOW_POWER_SLEEP_MODE:
                         CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk;
+                        // Set BT to enter in low power mode
+                        Power_Down_Control_register_ll |= 0x20U;
+                        Power_Down_Control_register_ll |= 0x80U;
                         break;
         case LOW_POWER_DREAM_MODE:
                         CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk | CRU_OSCCON_DRMEN_Msk;
+                        // Set BT to enter in low power mode
+                        Power_Down_Control_register_ll |= 0x20U;
+                        Power_Down_Control_register_ll |= 0x80U;
                         break;
         case LOW_POWER_DEEP_SLEEP_MODE:
+                        CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk;
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
+                        break;
+        case LOW_POWER_EXTREME_DEEP_SLEEP_MODE:
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_XSEMAEN_Msk); // Disable Extended semaphore register
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_XSEMAEN_Msk);
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCPWREQ_Msk); // Disable power to RTCC
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCPWREQ_Msk);
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCCWDIS_Msk; // Disable wake up from RTCC
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCCWDIS_Msk;
+                        
+                        CFG_REGS->CFG_CFGCON4 &= (~CFG_CFGCON4_DSWDTEN_Msk); // Disable DSWDT
+
                         CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk;
                         DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
                         DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
@@ -132,6 +153,7 @@ void POWER_DS_SoftwareRestore(void)
 // DSCON.RELEASE must be 0 before calling this
 void POWER_DS_WakeupSourceClear( POWER_DS_WAKEUP_SOURCE wakeupSource )
 {
+    DSCON_REGS->DSCON_DSWSRC &= ~((uint32_t)wakeupSource);
     DSCON_REGS->DSCON_DSWSRC &= ~((uint32_t)wakeupSource);
 }
 
@@ -228,8 +250,8 @@ void POWER_DS_SemaphoreWrite(POWER_DS_SEMAPHORE sema, uint32_t semaValue)
     }
     else
     {
-        DSCON_REGS->DSCON_DSSEMA1 = semaValue;
-        DSCON_REGS->DSCON_DSSEMA1 = semaValue;
+        DSCON_REGS->DSCON_DSXSEMA1 = semaValue;
+        DSCON_REGS->DSCON_DSXSEMA1 = semaValue;
     }
 
     /* Lock System */

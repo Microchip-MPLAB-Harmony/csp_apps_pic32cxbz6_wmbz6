@@ -50,14 +50,14 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "peripheral/power/plib_power.h"
-#include "peripheral/evsys/plib_evsys.h"
 #include "peripheral/sercom/usart/plib_sercom0_usart.h"
+#include "peripheral/evsys/plib_evsys.h"
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/ac/plib_ac.h"
 #include "peripheral/rtc/plib_rtc.h"
+#include "peripheral/ac/plib_ac.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -68,13 +68,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "WBZ653"
-#define DEVICE_ARCH			 "CORTEX-M4"
-#define DEVICE_FAMILY		 "PIC32CX_BZ6"
-#define DEVICE_SERIES		 "WBZ65"
+#define DEVICE_NAME          "WBZ653"
+#define DEVICE_ARCH          "CORTEX-M4"
+#define DEVICE_FAMILY        "PIC32CX_BZ6"
+#define DEVICE_SERIES        "WBZ65"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 128000000
+#define CPU_CLOCK_FREQUENCY 128000000U
 
 // *****************************************************************************
 // *****************************************************************************
