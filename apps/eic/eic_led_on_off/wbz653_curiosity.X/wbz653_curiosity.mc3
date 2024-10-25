@@ -23,7 +23,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.2"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -56,6 +56,28 @@
          <value>__ROOTVIEW</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_10_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_10_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_11_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_11_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_12_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_12_MODE&quot;&gt;
@@ -67,44 +89,44 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_17_DIR"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_13_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_17_DIR&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;Out&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_17_FUNCTION_NAME"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_17_FUNCTION_NAME&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;LED_RED&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_17_FUNCTION_TYPE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_17_FUNCTION_TYPE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_17_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_17_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_13_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_16_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_16_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_18_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_18_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_19_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_19_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;EXTINT3&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -144,9 +166,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_23_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_22_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_23_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_22_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -188,105 +210,6 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_27_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_27_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_29_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_29_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_31_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_31_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_32_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_32_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_34_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_34_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_35_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_35_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_37_FUNCTION_TYPE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_37_FUNCTION_TYPE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;EXTINT3&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_37_MODE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_37_MODE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_38_DIR"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_38_DIR&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_38_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_38_MODE&quot;&gt;
@@ -298,9 +221,9 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_39_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_3_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_39_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_3_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -309,9 +232,42 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_40_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_41_DIR"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_40_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_41_DIR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;Out&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_41_FUNCTION_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_41_FUNCTION_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;LED_RED&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_41_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_41_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_41_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_41_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -342,9 +298,20 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_44_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_45_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_44_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_45_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_46_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_46_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -364,6 +331,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_48_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_48_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_49_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_49_MODE&quot;&gt;
@@ -375,11 +353,11 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_50_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_51_DIR"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_50_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_51_DIR&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -389,6 +367,17 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_51_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_51_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_52_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_52_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -408,9 +397,20 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_5_MODE"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_57_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_5_MODE&quot;&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_57_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_59_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_59_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
     &lt;/Values&gt;
@@ -1439,7 +1439,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\definitions.h</file>
-         <hash>3dd31102224929aabad612c125810d338dabf4fc0d5066092c6d2e7c7cdb7d43</hash>
+         <hash>7239ecf1faf4a7def40906d064da79f0ec8322b13d521d58b4130a1569c8584f</hash>
       </entry>
       <entry>
          <file>..\src\config\default\device.h</file>
@@ -1455,11 +1455,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\exceptions.c</file>
-         <hash>1fd383302c4cdf1cc6a804aa03b8abe8c1e5e5e9ea3450438c34dcea441e6b34</hash>
+         <hash>de00e84d46e0d8933ee2fae9d699e08456443d4f80ac78f87edada9c35a9d15f</hash>
       </entry>
       <entry>
          <file>..\src\config\default\initialization.c</file>
-         <hash>2aaec629f92358ef4cc970cf17f24866cc226374dfda6097c760af8f62c74371</hash>
+         <hash>ffb80c9cd56e21a57bbe615cd0375c5e436c80d5ab7ccf592ffae1a0db55fd32</hash>
       </entry>
       <entry>
          <file>..\src\config\default\interrupts.c</file>
@@ -1475,7 +1475,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.c</file>
-         <hash>18c544e63e90ed00bf3b7d73a2eaeee841b9db555517a38a73f04be2fe54ad09</hash>
+         <hash>4ad14e3654213fc5726574d0d557cf59fb2983277afba72fec6b1abfe2ddfdfb</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.h</file>
@@ -1507,7 +1507,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\gpio\plib_gpio.c</file>
-         <hash>94eb672be164bfcc2c991802b4e43f2d28c8ae78551db71b8162f9811023ab31</hash>
+         <hash>1e97d7466e4032388de8d995ad5101545be43926647049f2b351588afd0cbbe2</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\gpio\plib_gpio.h</file>
@@ -1567,7 +1567,7 @@
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
-         <hash>2de01ae2556a38eb82c389de23c701805ec63308cfbcf3f84cb12141589b0858</hash>
+         <hash>8cda7ac3ff6f0eb5e83c4fe613dd195151b24da54167f5c3c007e599a03f1edc</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm4.h</file>
