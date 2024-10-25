@@ -107,7 +107,7 @@ void ADCHS_Initialize(void)
     {
         /* Nothing to do */
     }
-    ADCHS_REGS->ADCHS_ADCCON3 |= ADCHS_ADCCON3_DIGEN7_Msk ;       // Enable ADC
+    ADCHS_REGS->ADCHS_ADCCON3 |= ADCHS_ADCCON3_DIGEN7_Msk;       // Enable ADC
 }
 
 
