@@ -61,14 +61,6 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/*** Macros for LED_RED pin ***/
-#define LED_RED_Set()               (GPIOC_REGS->GPIO_LATSET = (1U<<7U))
-#define LED_RED_Clear()             (GPIOC_REGS->GPIO_LATCLR = (1U<<7U))
-#define LED_RED_Toggle()            (GPIOC_REGS->GPIO_LATINV= (1U<<7U))
-#define LED_RED_Get()               ((GPIOC_REGS->GPIO_PORT >> 7U) & 0x1U)
-#define LED_RED_OutputEnable()      (GPIOC_REGS->GPIO_TRISCLR = (1U<<7U))
-#define LED_RED_InputEnable()       (GPIOC_REGS->GPIO_TRISSET = (1U<<7U))
-#define LED_RED_PIN                  GPIO_PIN_RC7
 /*** Macros for EEPROM_HOLD pin ***/
 #define EEPROM_HOLD_Set()               (GPIOD_REGS->GPIO_LATSET = (1U<<1U))
 #define EEPROM_HOLD_Clear()             (GPIOD_REGS->GPIO_LATCLR = (1U<<1U))
@@ -77,6 +69,14 @@
 #define EEPROM_HOLD_OutputEnable()      (GPIOD_REGS->GPIO_TRISCLR = (1U<<1U))
 #define EEPROM_HOLD_InputEnable()       (GPIOD_REGS->GPIO_TRISSET = (1U<<1U))
 #define EEPROM_HOLD_PIN                  GPIO_PIN_RD1
+/*** Macros for LED_RED pin ***/
+#define LED_RED_Set()               (GPIOC_REGS->GPIO_LATSET = (1U<<7U))
+#define LED_RED_Clear()             (GPIOC_REGS->GPIO_LATCLR = (1U<<7U))
+#define LED_RED_Toggle()            (GPIOC_REGS->GPIO_LATINV= (1U<<7U))
+#define LED_RED_Get()               ((GPIOC_REGS->GPIO_PORT >> 7U) & 0x1U)
+#define LED_RED_OutputEnable()      (GPIOC_REGS->GPIO_TRISCLR = (1U<<7U))
+#define LED_RED_InputEnable()       (GPIOC_REGS->GPIO_TRISSET = (1U<<7U))
+#define LED_RED_PIN                  GPIO_PIN_RC7
 /*** Macros for EEPROM_CS pin ***/
 #define EEPROM_CS_Set()               (GPIOA_REGS->GPIO_LATSET = (1U<<10U))
 #define EEPROM_CS_Clear()             (GPIOA_REGS->GPIO_LATCLR = (1U<<10U))
