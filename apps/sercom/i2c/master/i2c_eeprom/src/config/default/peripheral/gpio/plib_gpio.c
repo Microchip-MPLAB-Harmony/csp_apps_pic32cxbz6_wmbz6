@@ -58,6 +58,8 @@
 */
 void GPIO_Initialize ( void )
 {
+    /* Disable JTAG since at least one of its pins is configured for Non-JTAG function */
+    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_JTAGEN_Msk;
     /* PORTA Initialization */
     GPIOA_REGS->GPIO_CNPUSET = 0x180U; /* Pull-Up Enable */
     /* PORTB Initialization */
