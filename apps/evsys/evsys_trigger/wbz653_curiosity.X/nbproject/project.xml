@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>wbz653_curiosity</name>
+            <name>evsys_trigger_wbz653_curiosity</name>
             <creation-uuid>ae103785-c2f9-43ef-a90e-8582bd27151d</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

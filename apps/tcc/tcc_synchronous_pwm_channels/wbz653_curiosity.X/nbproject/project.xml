@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>wbz653_curiosity</name>
+            <name>tcc_synchronous_pwm_channels_wbz653_curiosity</name>
             <creation-uuid>4610874f-8541-4453-8849-526e168bf25c</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

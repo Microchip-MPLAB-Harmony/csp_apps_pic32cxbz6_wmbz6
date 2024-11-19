@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>wbz653_curiosity</name>
+            <name>rtc_alarm_wbz653_curiosity</name>
             <creation-uuid>7148d353-20ae-474f-ab27-06cafc9fada4</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

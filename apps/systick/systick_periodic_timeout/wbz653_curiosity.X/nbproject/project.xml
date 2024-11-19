@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>wbz653_curiosity</name>
+            <name>systick_periodic_timeout_wbz653_curiosity</name>
             <creation-uuid>cf30afcd-e24c-4bb3-93ea-f2c93eb3b6a3</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
