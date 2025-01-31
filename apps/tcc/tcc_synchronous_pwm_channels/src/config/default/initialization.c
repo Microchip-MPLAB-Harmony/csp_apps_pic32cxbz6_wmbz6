@@ -215,9 +215,9 @@ void SYS_Initialize ( void* data )
 
 	GPIO_Initialize();
 
-    EVSYS_Initialize();
-
     TCC0_PWMInitialize();
+
+    EVSYS_Initialize();
 
 
     NVIC_Initialize();
