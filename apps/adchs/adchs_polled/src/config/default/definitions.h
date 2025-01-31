@@ -50,8 +50,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "peripheral/adchs/plib_adchs.h"
-#include "peripheral/evsys/plib_evsys.h"
 #include "peripheral/sercom/usart/plib_sercom0_usart.h"
+#include "peripheral/evsys/plib_evsys.h"
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/nvic/plib_nvic.h"
@@ -67,10 +67,10 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME          "WBZ653"
+#define DEVICE_NAME          "PIC32WM_BZ6204"
 #define DEVICE_ARCH          "CORTEX-M4"
 #define DEVICE_FAMILY        "PIC32CX_BZ6"
-#define DEVICE_SERIES        "WBZ65"
+#define DEVICE_SERIES        "PIC32WM_BZ6"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 128000000U
