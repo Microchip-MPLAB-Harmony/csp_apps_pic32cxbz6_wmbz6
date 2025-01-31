@@ -123,9 +123,6 @@ typedef enum
     /* Instance Id for Peripheral PAC */
     PAC_PERIPHERAL_PAC = ID_PAC,
 
-    /* Instance Id for Peripheral QEI */
-    PAC_PERIPHERAL_QEI = ID_QEI,
-
     /* Instance Id for Peripheral QSPI */
     PAC_PERIPHERAL_QSPI = ID_QSPI,
 
