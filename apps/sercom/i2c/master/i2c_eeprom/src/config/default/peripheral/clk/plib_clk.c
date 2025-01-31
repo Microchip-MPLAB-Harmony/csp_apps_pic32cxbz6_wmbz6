@@ -220,7 +220,7 @@ void CLOCK_Initialize( void )
     /* Peripheral Module Disable Configuration */
 
 
-    CFG_REGS->CFG_PMD1 = 0x200007e0U;
+    CFG_REGS->CFG_PMD1 = 0x200107e0U;
     CFG_REGS->CFG_PMD2 = 0x0U;
     CFG_REGS->CFG_PMD3 = 0xf73fffdU;
 
