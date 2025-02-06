@@ -3,6 +3,22 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 peripheral library application examples for PIC32CX-BZ6 and PIC32WM_BZ6204 family v3.1.0
+
+Updated the part number from WBZ653 to PIC32WM_BZ6204 for all the application demos.
+
+### New Features
+
+- None
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- Same as v3.0.0 release
+
 ## Harmony 3 peripheral library application examples for PIC32CX-BZ6 and WBZ653 family v3.0.0
 
 ### Development kit and demo application support

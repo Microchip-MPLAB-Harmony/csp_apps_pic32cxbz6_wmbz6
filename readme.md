@@ -1,6 +1,6 @@
 [![MCHP](https://raw.githubusercontent.com/wiki/Microchip-MPLAB-Harmony/Microchip-MPLAB-Harmony.github.io/images/microchip_logo.png)](https://www.microchip.com)
 
-# Harmony 3 peripheral library application examples for PIC32CX-BZ6 and WBZ653 family
+# Harmony 3 peripheral library application examples for PIC32CX-BZ6 and PIC32WM_BZ6204 family
 
 MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices.  Refer to the following links for more information.
 
@@ -10,12 +10,12 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony)
 - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/)
 
-This repository contains the MPLAB® Harmony 3 peripheral library application examples for PIC32CX-BZ6 and WBZ653 family
+This repository contains the MPLAB® Harmony 3 peripheral library application examples for PIC32CX-BZ6 and PIC32WM_BZ6204 family
 
 - [Release Notes](release_notes.md)
 - [Microchip SLA](Microchip_SLA001.md)
 
-To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6) and then click **Clone** button to clone this repository or download as zip file.
+To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6) and then click **Clone** button to clone this repository or download as zip file.
 This content can also be downloaded using MCC content manager available as part of the MPLAB® X IDE.
 
 ## Contents Summary
@@ -26,7 +26,7 @@ This content can also be downloaded using MCC content manager available as part 
 
 ## Code Examples
 
-Click [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CSP_APPS_PIC32CXBZ6_WBZ6_INTRODUCTION&redirect=true) to view the online documentation of code examples hosted in this repository.
+Click [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CSP_APPS_PIC32CXBZ6_WMBZ6_INTRODUCTION&redirect=true) to view the online documentation of code examples hosted in this repository.
 
 To view the documentation offline, follow these steps:
  - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-563220A7-56B4-4541-AC77-5073E51754E7?type=webhelp).
@@ -35,11 +35,11 @@ To view the documentation offline, follow these steps:
 
 ____
 
-[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6/blob/master/Microchip_SLA001.md)
-[![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6/releases/latest)
-[![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6/releases/latest)
-[![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6/graphs/commit-activity)
-[![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6.svg)]()
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6/blob/master/Microchip_SLA001.md)
+[![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6/releases/latest)
+[![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6/releases/latest)
+[![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6.svg)](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6/graphs/commit-activity)
+[![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6.svg)]()
 
 ____
 
@@ -50,5 +50,5 @@ ____
 [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/)
 [![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech)
 
-[![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6.svg?style=social)]()
-[![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wbz6.svg?style=social)]()
+[![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6.svg?style=social)]()
+[![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz6_wmbz6.svg?style=social)]()
