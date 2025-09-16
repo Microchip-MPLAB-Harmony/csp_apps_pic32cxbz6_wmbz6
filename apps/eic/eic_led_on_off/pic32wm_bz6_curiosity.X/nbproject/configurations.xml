@@ -92,10 +92,10 @@
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/ac.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/adchs.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/eth.h</itemPath>
-            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/silex.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/tc.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/pps.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/usb.h</itemPath>
+            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/crypto.h</itemPath>
           </logicalFolder>
           <logicalFolder name="instance" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/qei.h</itemPath>
@@ -146,7 +146,6 @@
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/hmatrix2top.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/tc5.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/tc1.h</itemPath>
-            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/silex.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/ccl.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/tcc2.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/pche.h</itemPath>
@@ -163,6 +162,7 @@
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/can0.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/tc2.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/usb.h</itemPath>
+            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/crypto.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/pio/pic32wm_bz6204.h</itemPath>
@@ -174,8 +174,17 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="pic32wm_bz6_curiosity" displayName="pic32wm_bz6_curiosity" projectFiles="true">
+        <itemPath>pic32wm_bz6_curiosity/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>pic32wm_bz6_curiosity/components/cmsis.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/core.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/dfp.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/eic.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/evsys.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>pic32wm_bz6_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
@@ -230,11 +239,11 @@
         <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CX-BZ6_DFP" vendor="Microchip" version="1.2.16"/>
+        <pack name="PIC32CX-BZ6_DFP" vendor="Microchip" version="1.3.38"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
