@@ -96,7 +96,6 @@
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/freqm.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/cru.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/cfg.h</itemPath>
-            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/silex.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/dmt.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/eic.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/hmatrix2top.h</itemPath>
@@ -106,6 +105,7 @@
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/dscon.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/eth.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/usb.h</itemPath>
+            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/component/crypto.h</itemPath>
           </logicalFolder>
           <logicalFolder name="instance" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/sercom5.h</itemPath>
@@ -136,7 +136,6 @@
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/dmac.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/pac.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/ramecc.h</itemPath>
-            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/silex.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/tc6.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/pmu.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/tc2.h</itemPath>
@@ -173,6 +172,7 @@
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/sercom1.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/tc0.h</itemPath>
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/usb.h</itemPath>
+            <itemPath>../src/packs/PIC32WM_BZ6204_DFP/instance/crypto.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/PIC32WM_BZ6204_DFP/pio/pic32wm_bz6204.h</itemPath>
@@ -184,8 +184,19 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="pic32wm_bz6_curiosity" displayName="pic32wm_bz6_curiosity" projectFiles="true">
+        <itemPath>pic32wm_bz6_curiosity/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>pic32wm_bz6_curiosity/components/adchs.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/cmsis.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/core.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/dfp.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/evsys.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/sercom0.yml</itemPath>
+          <itemPath>pic32wm_bz6_curiosity/components/stdio.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>pic32wm_bz6_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
@@ -248,11 +259,11 @@
         <targetPluginBoard/>
         <platformTool>ICD5Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CX-BZ6_DFP" vendor="Microchip" version="1.2.16"/>
+        <pack name="PIC32CX-BZ6_DFP" vendor="Microchip" version="1.3.38"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
