@@ -178,16 +178,16 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="pic32wm_bz6_curiosity"
-                     displayName="pic32wm_bz6_curiosity"
+      <logicalFolder name="systick_periodic_timeout_pic32wm_bz6_curiosity_default"
+                     displayName="systick_periodic_timeout_pic32wm_bz6_curiosity_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>pic32wm_bz6_curiosity/components/cmsis.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/core.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/dfp.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/evsys.yml</itemPath>
+          <itemPath>systick_periodic_timeout_pic32wm_bz6_curiosity_default/components/cmsis.yml</itemPath>
+          <itemPath>systick_periodic_timeout_pic32wm_bz6_curiosity_default/components/core.yml</itemPath>
+          <itemPath>systick_periodic_timeout_pic32wm_bz6_curiosity_default/components/dfp.yml</itemPath>
+          <itemPath>systick_periodic_timeout_pic32wm_bz6_curiosity_default/components/evsys.yml</itemPath>
         </logicalFolder>
-        <itemPath>pic32wm_bz6_curiosity/mcc-config.mc4</itemPath>
+        <itemPath>systick_periodic_timeout_pic32wm_bz6_curiosity_default/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
@@ -252,7 +252,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="PIC32CX-BZ6_DFP" vendor="Microchip" version="1.3.38"/>
       </packs>
       <ScriptingSettings>

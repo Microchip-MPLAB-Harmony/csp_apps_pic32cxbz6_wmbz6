@@ -185,19 +185,19 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="pic32wm_bz6_curiosity"
-                     displayName="pic32wm_bz6_curiosity"
+      <logicalFolder name="can_fd_operation_blocking_pic32wm_bz6_curiosity_default"
+                     displayName="can_fd_operation_blocking_pic32wm_bz6_curiosity_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>pic32wm_bz6_curiosity/components/can1.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/cmsis.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/core.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/dfp.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/evsys.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/sercom0.yml</itemPath>
-          <itemPath>pic32wm_bz6_curiosity/components/stdio.yml</itemPath>
+          <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/components/can1.yml</itemPath>
+          <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/components/cmsis.yml</itemPath>
+          <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/components/core.yml</itemPath>
+          <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/components/dfp.yml</itemPath>
+          <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/components/evsys.yml</itemPath>
+          <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/components/sercom0.yml</itemPath>
+          <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/components/stdio.yml</itemPath>
         </logicalFolder>
-        <itemPath>pic32wm_bz6_curiosity/mcc-config.mc4</itemPath>
+        <itemPath>can_fd_operation_blocking_pic32wm_bz6_curiosity_default/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
@@ -267,7 +267,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="PIC32CX-BZ6_DFP" vendor="Microchip" version="1.3.38"/>
       </packs>
       <ScriptingSettings>

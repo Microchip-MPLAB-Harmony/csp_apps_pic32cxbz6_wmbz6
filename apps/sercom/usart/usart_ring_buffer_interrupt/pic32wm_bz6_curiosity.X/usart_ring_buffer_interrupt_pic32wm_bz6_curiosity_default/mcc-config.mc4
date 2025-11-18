@@ -9,14 +9,12 @@ modules:
 - core
 - dfp
 - evsys
-- rtc
 - sercom0
-- stdio
 generatedFileHashHistoryMap:
 - file: ..\src\config\default\PIC32WM_BZ6204.ld
   hash: c336e30984b14457a5ff25c99abff62a8d57ae75f4883f49924c355bbf562efd
 - file: ..\src\config\default\definitions.h
-  hash: 7e0f71f40e95e5dcaad73261a17e5651b16d5b6e6f644cb48080085c9f92851e
+  hash: ec92302ac5b316cccb1aba6401bf177536a1bc2c711eba89265d3d4778d262fa
 - file: ..\src\config\default\device.h
   hash: 751c7a83c29599a951e732ea0efaf0a85ab5d0f09568f27eee620fb5bddb7149
 - file: ..\src\config\default\device_cache.h
@@ -26,15 +24,15 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\exceptions.c
   hash: de00e84d46e0d8933ee2fae9d699e08456443d4f80ac78f87edada9c35a9d15f
 - file: ..\src\config\default\initialization.c
-  hash: 4ce91007f3aa5f1c6afa09df27cb030920538bc84b76f1a822e82cdf57e46508
+  hash: b52d3a9171b4fd31a700a9b84bdce38c0041f64a1418fe06b102d2ab53ef8c27
 - file: ..\src\config\default\interrupts.c
-  hash: f2df637492e929cf8813fb391111ead8e71e29a07b624b1c81c5407622bfc661
+  hash: ee1c57ca762a834a09cb4a27d60f2830f1a4cbb948aa097bb7e888ab1ca8c76d
 - file: ..\src\config\default\interrupts.h
-  hash: c15637981856bf59ed8f45f4281eb3b2f1233ad1709ef94ddb3a753b05e68872
+  hash: 8df0e9a86ef186cb8a9851640e795f33f4712625689225a2f260fd62fa0135b2
 - file: ..\src\config\default\libc_syscalls.c
   hash: 88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f
 - file: ..\src\config\default\peripheral\clk\plib_clk.c
-  hash: b7dbb424fd589a2667501a90b1b405f313ee8562afd5bea0ea0ddd15e48797fb
+  hash: 4fba156648c589443395f1bab8e52560d05c746693a337dfecb7791e4f4ddea8
 - file: ..\src\config\default\peripheral\clk\plib_clk.h
   hash: 2d1939a0da512a64fea40fffe4c2f30f2d3d16344591a807c5814fc1e67fcc01
 - file: ..\src\config\default\peripheral\cmcc\plib_cmcc.c
@@ -46,27 +44,23 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\peripheral\evsys\plib_evsys.h
   hash: f7d08eb8162f271ce1db384c082586a6624e506aa7f502c64c4ab5a1aadac47d
 - file: ..\src\config\default\peripheral\gpio\plib_gpio.c
-  hash: b7a08adecfe85ce600d4d7b189052e8863981b3875b5dd11ca5254b27f28131f
+  hash: c5014cebaaa9b7b6ffc164668904a1d01d986f11be28fe9ced54d026743665b3
 - file: ..\src\config\default\peripheral\gpio\plib_gpio.h
-  hash: 9d431af9763ed5c457a782a7a0582f9c6a45963ca51f1310ca6c18eb0873c57f
+  hash: 810a90199c6fd33f88ae5bc894e7459c29206c894276aaeb745ab013c6936952
 - file: ..\src\config\default\peripheral\nvic\plib_nvic.c
-  hash: cf2b1003db3953e23609b66703c9daec0c59f208d37d9d34d991a984b3bfcf25
+  hash: d8c6de071fb8eb557797bd5850608cf299dec27567c767241b3f81918bb85af1
 - file: ..\src\config\default\peripheral\nvic\plib_nvic.h
   hash: 9936ac782115af41003255283fa2f603f4ff2212d16275b7c80ea8d067a9e208
-- file: ..\src\config\default\peripheral\rtc\plib_rtc.h
-  hash: bcb344e84a5e7d9e07ae195fe42e51d4819ddc98332e55e6b5a3cad58b4943cc
-- file: ..\src\config\default\peripheral\rtc\plib_rtc_clock.c
-  hash: 17b4652229b9f61497aa4f9a3d0bf4c3000b060d180437706c693fea5ca51d54
 - file: ..\src\config\default\peripheral\sercom\usart\plib_sercom0_usart.c
-  hash: 1993e37e02784db69e3091a474a6bd4195092f5db57873a22f669e73a39447f9
+  hash: 87c36380ce242373e7247da45bd1a8dd669468df7e4a9009f6c19cb6e6cc7cd6
 - file: ..\src\config\default\peripheral\sercom\usart\plib_sercom0_usart.h
-  hash: ada260bab121780e4ff3b1d8514c96508f13c20f21c860135a5e986f23fb2c9e
+  hash: 0df2c338e8de7443bc597e108b579c4f29d23090bba433ebddf71d0eac3d218a
 - file: ..\src\config\default\peripheral\sercom\usart\plib_sercom_usart_common.h
   hash: 3653b66472c558c50f7037a1dd25d2678e9a13aa718f3c53a2195e6f3919ea48
 - file: ..\src\config\default\startup_xc32.c
   hash: 95d22da03176bc3a797e2e56be702fe4776ce754d18448cd86ca42ccd4083e00
 - file: ..\src\config\default\stdio\xc32_monitor.c
-  hash: 796b36d5a0a0e981798c45a3b8f94d1c52d2bfaee58ad4412fedaed99275f290
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
 - file: ..\src\config\default\toolchain_specifics.h
   hash: 6fc0551b0fa3362678b3d7a227386fafa343140d31e4da3ad4af972e61cd0acb
 - file: ..\src\main.c
