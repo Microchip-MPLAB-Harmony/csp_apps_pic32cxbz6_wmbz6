@@ -37,8 +37,6 @@
           <itemPath>../src/config/default/definitions.h</itemPath>
           <itemPath>../src/config/default/device_cache.h</itemPath>
         </logicalFolder>
-        <itemPath>../src/app.h</itemPath>
-        <itemPath>../src/app_sst26.h</itemPath>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
         <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
@@ -244,7 +242,6 @@
           <itemPath>../src/config/default/initialization.c</itemPath>
           <itemPath>../src/config/default/startup_xc32.c</itemPath>
         </logicalFolder>
-        <itemPath>../src/app_sst26.c</itemPath>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
