@@ -3,6 +3,28 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 peripheral library application examples for PIC32CX-BZ6 and WBZ653 family v3.1.2
+
+### Development kit and demo application support
+
+Following table provides number of peripheral library examples available for different development kits.
+
+| Development Kits  | MPLAB X applications |
+|:-----------------:|:-------------------:|
+| PIC32CX-BZ6 and WBZ653 Curiosity Board | 25 |
+
+### New Features
+
+- None
+
+### Bug fixes
+
+- Updated demo qspi for IAR compatibility.
+
+### Known Issues
+
+- None
+
 ## Harmony 3 peripheral library application examples for PIC32CX-BZ6 and WBZ653 family v3.1.1
 
 ### Development kit and demo application support
